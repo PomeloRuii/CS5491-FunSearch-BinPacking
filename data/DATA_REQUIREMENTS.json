@@ -1,0 +1,20 @@
+{
+  "inputs_are_not_in_public_release": true,
+  "development_dataset_canonical_sha256": "a9709f23f17aaf0e083a989e1b5ccf53ac91221987128d5480ff1093f594c401",
+  "development_state_bank_canonical_sha256": "d69fc118d9ab4a464a47885f17e44a0b7dcc92072515d837518db795c0d35cf5",
+  "audit_state_bank_canonical_sha256": "e86cbdf86c722ba7f87fe3e3aa018e0c2a03b8120cac2c029006552b6d71f389",
+  "frozen_data_seed": 5491,
+  "state_seed": 5492,
+  "audit_seed": 5493,
+  "images_used": {
+    "development": "sha256:a33f8214653b7d5368f622a860de848c20c77864db93ec9d5227373ebe2a405d",
+    "audit": "sha256:e97e9012f33113f48a74f2fa7be7c06793dca0cf79590d526fe0990fb6d80a19"
+  },
+  "registry_pull_reference_available": false,
+  "required_inputs": [
+    "minimized development research_data.json",
+    "development states.json",
+    "reserved audit states.json"
+  ],
+  "final_heldout_values_included": false
+}

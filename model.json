@@ -1,0 +1,18 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+  "quantization": "Q4_K_M",
+  "temperature": 0.2,
+  "top_p": 0.9,
+  "max_tokens": 512,
+  "reasoning_effort": "none",
+  "context_length": 32768,
+  "policy": "obp-objective-alternatives-distinct-seeds-v3",
+  "acceptance": "phase3-numerical-ast-v2",
+  "logged_pilot_requests": 30,
+  "earlier_connectivity_count": null,
+  "earlier_connectivity_minimum": 2,
+  "authorized_remaining_generation_calls": 0,
+  "main_campaign_calls": 0,
+  "proposal_model_change": "Selected Qwen3.8 replaces original Qwen2.5-Coder-7B-Instruct plan."
+}

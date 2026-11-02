@@ -1,0 +1,9 @@
+```python
+def priority_v1(item: float, bins: np.ndarray) -> np.ndarray:
+    bins = np.asarray(bins, dtype=float)
+    residual = bins - item
+    fit = residual / np.maximum(bins, 1e-12)
+    waste = residual
+    score = -waste + 0.5 * fit
+    return score
+```

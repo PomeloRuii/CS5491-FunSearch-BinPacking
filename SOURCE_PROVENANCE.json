@@ -1,0 +1,10 @@
+{
+  "upstream": "https://github.com/RayZhhh/funsearch",
+  "upstream_commit": "4b8b4e7d43287998500983d709dfa44be58fca91",
+  "derived_from": "DeepMind FunSearch,2023",
+  "software_license": "Apache-2.0; original headers, LICENSE and NOTICE retained",
+  "original_sealed_execution_manifest_sha256": "5f15c043c21bd9afe5ae7b871e9ee2c7dd986d0b32de41618f742d59b8508eb9",
+  "original_frozen_stream_sha256": "f28769d5f6cdbceef7c68c610d271b3cf979d36d3a7b9a856d356372c5dd286f",
+  "publication_projections_are_not_original_receipts": true,
+  "private_approvals_and_history_included": false
+}

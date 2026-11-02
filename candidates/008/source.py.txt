@@ -1,0 +1,22 @@
+```python
+def priority_v1(item: float, bins: np.ndarray) -> np.ndarray:
+    bins = np.asarray(bins, dtype=float)
+    residual = bins - item
+    used = residual > 0
+    empty = residual == 0
+    item_f = float(item)
+    max_res = np.max(residual)
+    if max_res <= 0:
+        return np.zeros_like(bins)
+    norm = residual / max_res
+    fit_score = np.where(used, norm, 0.0)
+    empty_bonus = np.where(empty, 1.0, 0.0)
+    small_item = item_f < 0.5
+    if small_item:
+        weights = np.where(used, 1.0, 0.0)
+        scores = weights * (0.5 + 0.5 * norm) + empty_bonus * 0.1
+    else:
+        scores = fit_score + empty_bonus * 0.05
+    scores = np.where(used, scores, -1e9)
+    return scores
+```

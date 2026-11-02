@@ -1,0 +1,32 @@
+{
+  "wave1_usage": {
+    "prompt_tokens": 6480,
+    "completion_tokens": 1716,
+    "total_tokens": 8196
+  },
+  "wave2_usage": {
+    "prompt_tokens": 6794,
+    "completion_tokens": 1228,
+    "total_tokens": 8022
+  },
+  "all_new_usage": {
+    "prompt_tokens": 13274,
+    "completion_tokens": 2944,
+    "total_tokens": 16218
+  },
+  "wave1_request_processing_seconds": 24.95222789999025,
+  "wave2_request_processing_seconds": 20.69708769999852,
+  "wave1_preload_seconds": 13.072239899993292,
+  "wave2_preload_seconds": 23.258446099993307,
+  "wave1_session_wall_seconds": 38.609926399996766,
+  "wave2_active_session_wall_seconds": 45.406043200004206,
+  "wave2_calendar_elapsed_seconds_including_controller_recovery": 171.51192712783813,
+  "wave2_recovery_and_operator_gap_seconds": 126.10588392783393,
+  "learning_batch_wall_seconds": 10.390861500000028,
+  "learning_container_lifecycle_seconds": 10.016768299999967,
+  "learning_successful_pure_seconds": 1.3686370509999999,
+  "known_logged_pilot_calls": 30,
+  "historical_connectivity_exact_count": null,
+  "historical_connectivity_known_minimum": 2,
+  "main_requests": 0
+}

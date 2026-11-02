@@ -1,0 +1,13 @@
+{
+  "policy_id": "obp-validity-v1",
+  "scope": "Shared acceptance policy for all three future comparison configurations",
+  "priority_output": "NumPy-compatible, same shape as feasible bins, finite real numeric values; reject boolean, complex and object values",
+  "evaluation": "Every required group and instance must finish; OR3 requires 20 instances and 10000 priority calls",
+  "fitness": "Require present finite numeric non-boolean fitness and complete group coverage",
+  "cleanup": "Require worker context, successful exit/protocol identity and verified container removal",
+  "invalid_candidate": "Record failure, null experimental fitness, no database registration",
+  "selection_and_fitness": "Original feasible-bin order, first-max np.argmax and negative mean bins objective unchanged for valid candidates",
+  "historical_nonfinite_run": "Retain as a semantics diagnostic; not eligible experimental data under this policy",
+  "comparison_configurations_implemented": false,
+  "llm_generated_execution_enabled": false
+}

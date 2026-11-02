@@ -1,0 +1,20 @@
+{
+  "policy": "phase3-numerical-ast-v2",
+  "static_policy_sha256": "a544367cc0aeb105dbce78017f4dc4040d686e86cc91006f4ef93439f36cea71",
+  "build_receipt_sha256": "2ddb64288275027dc252b35a737411f6d50552eae5cd43f02ce759113df992cb",
+  "validation_sha256": "97c6c5be02c1bd1b81c8903c70366f0237fea094bc9b990c90c9078586f4b572",
+  "comparison_modes": [
+    "standard",
+    "exact",
+    "behavioral"
+  ],
+  "fingerprint_sizes": [
+    16,
+    64,
+    128
+  ],
+  "runtime_validity_policy": "obp-validity-v1",
+  "historical_policy": "phase3-numerical-ast-v1",
+  "versioning": "Applies prospectively; original v1 decisions and receipts are not reclassified.",
+  "generated_execution_enabled_globally": false
+}

@@ -1,0 +1,20 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Improve a numerical online-bin-packing heuristic. The optimization objective is to minimize bins used: maximize the negative mean used-bin count in each development family, then the equal mean of the complete family scores. Preserve this objective. Each positive arriving item sees only feasible residual capacities: valid_bin_indices = np.nonzero((bins - item) >= 0)[0], followed by priority(item, bins[valid_bin_indices]). Empty unused bins are included. Return a one-dimensional finite real NumPy score array in the same length/order. The original packer chooses valid_bin_indices[np.argmax(scores)] and the first maximum wins ties. Return scores, never a chosen index or a packing. Seek a substantively different, potentially better decision rule from supplied versions; copying, renaming locals, constant score shifts or positive scaling alone is not a meaningful improvement. Consider how item size and residual space interact to reduce future bin openings. No claim of novelty or improvement is assumed: unchanged/worse candidates are still recorded. NumPy is already imported as np. Use direct numerical np functions, ordinary arithmetic, local variables, slices, comparisons, np.where and if/else. Use np.asarray(..., dtype=float), np.max(...) or np.where(...) instead of ndarray methods or subscript assignment. No imports, helpers, input mutation, randomness, file/network/process access or calls to previous versions. Return exactly one complete function with the requested signature, concise numerical code (target at most 24 lines), no comments, docstrings, reasoning, Markdown or prose. End with a score-array return."
+    },
+    {
+      "role": "user",
+      "content": "ACTUAL UPSTREAM DATABASE PROMPT (verbatim; no inserted or invented versions):\n\nimport numpy as np\n\n\ndef priority_v0(item: float, bins: np.ndarray) -> np.ndarray:\n    \"\"\"Returns priority with which we want to add item to each bin.\n\n    Args:\n        item: Size of item to be added to the bin.\n        bins: Array of capacities for each bin.\n\n    Return:\n        Array of same size as bins with priority score of each bin.\n    \"\"\"\n    ratios = item / bins\n    log_ratios = np.log(ratios)\n    priorities = -log_ratios\n    return priorities\n\n\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    \"\"\"Improved version of `priority_v0`.\"\"\"\n\n\n\nMOST RECENT ACTUAL AUTHORIZED MODEL EVALUATION:\n{\"candidate_id\": 1, \"evaluated_island_id\": 0, \"feedback_receipt_sha256\": \"cbb51a94df85dab88ca99b2639a032aba8cc06b63c5e25e360c5b967a26535c4\", \"score\": -2047.125, \"scores_per_group\": {\"OR3\": -376.9166666666667, \"Weibull 5k\": -3717.3333333333335}, \"selected_next_island_id\": 8, \"source_sha256\": \"a6e1b252610023b6e3c968a00d8be3ee225951c91d657d8e557adbbf5661b309\"}\nThis receipt belongs to the stated candidate/island. It is not an invented score for other prompt functions. The next island is the upstream database selection. Improve the final requested version using the objective above.\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\nReturn the complete function only."
+    }
+  ],
+  "n": 1,
+  "stream": false,
+  "temperature": 0.2,
+  "top_p": 0.9,
+  "max_tokens": 512,
+  "seed": 549199013,
+  "reasoning_effort": "none"
+}

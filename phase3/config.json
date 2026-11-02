@@ -1,0 +1,20 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "expected_digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+  "expected_quantization": "Q4_K_M",
+  "base_url": "http://127.0.0.1:11434/v1",
+  "temperature": 0.2,
+  "top_p": 0.9,
+  "max_tokens": 512,
+  "seed": 5491,
+  "reasoning_effort": "none",
+  "request_timeout_seconds": 120,
+  "metadata_timeout_seconds": 8,
+  "max_attempts": 1,
+  "retry_backoff_seconds": 0,
+  "prompt_id": "funsearch-obp-concise-v2",
+  "prospective_max_new_generation_requests": 12,
+  "generation_authorized": false,
+  "model_execution_authorized": false,
+  "main_campaign_calls": 0
+}

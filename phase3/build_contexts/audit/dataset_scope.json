@@ -1,0 +1,10 @@
+{
+  "dataset": "audit",
+  "state_set": "audit",
+  "sizes": [
+    256
+  ],
+  "actions": [
+    "fingerprint"
+  ]
+}

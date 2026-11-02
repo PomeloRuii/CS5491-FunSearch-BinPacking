@@ -1,0 +1,11 @@
+```python
+def priority_v1(item: float, bins: np.ndarray) -> np.ndarray:
+    bins = np.asarray(bins, dtype=float)
+    residual = bins - item
+    used = residual > 0
+    base = np.where(used, 1.0 / (residual + 1e-9), 0.0)
+    waste = residual
+    penalty = np.where(used, waste * waste, 0.0)
+    scores = base - penalty
+    return scores
+```

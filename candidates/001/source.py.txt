@@ -1,0 +1,46 @@
+```python
+def priority_v1(item: float, bins: np.ndarray) -> np.ndarray:
+    bins = np.asarray(bins, dtype=float)
+    residual = bins - item
+    used = residual > 0
+    inv = np.where(used, 1.0 / np.where(used, residual, 1.0), 0.0)
+    inv_sq = inv * inv
+    inv_cu = inv * inv_sq
+    inv_qu = inv_cu * inv
+    inv_qui = inv_qu * inv
+    inv_six = inv_qui * inv
+    inv_sev = inv_six * inv
+    inv_eig = inv_sev * inv
+    inv_nin = inv_eig * inv
+    inv_ten = inv_nin * inv
+    inv_ele = inv_ten * inv
+    inv_twe = inv_ele * inv
+    inv_thi = inv_twe * inv
+    inv_fou = inv_thi * inv
+    inv_fiv = inv_fou * inv
+    inv_sixt = inv_fiv * inv
+    inv_seve = inv_sixt * inv
+    inv_eigh = inv_seve * inv
+    inv_nint = inv_eigh * inv
+    inv_tent = inv_nint * inv
+    inv_eleve = inv_tent * inv
+    inv_twel = inv_eleve * inv
+    inv_thir = inv_twel * inv
+    inv_fourt = inv_thir * inv
+    inv_fif = inv_fourt * inv
+    inv_sixt = inv_fif * inv
+    inv_seve = inv_sixt * inv
+    inv_eigh = inv_seve * inv
+    inv_nint = inv_eigh * inv
+    inv_tent = inv_nint * inv
+    inv_eleve = inv_tent * inv
+    inv_twel = inv_eleve * inv
+    inv_thir = inv_twel * inv
+    inv_fourt = inv_thir * inv
+    inv_fif = inv_fourt * inv
+    inv_sixt = inv_fif * inv
+    inv_seve = inv_sixt * inv
+    inv_eigh = inv_seve * inv
+    inv_nint = inv_eigh * inv
+    inv_tent = inv_nint * inv
+    inv_eleve = inv_tent * inv

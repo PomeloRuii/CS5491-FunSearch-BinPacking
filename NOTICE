@@ -1,0 +1,20 @@
+CS5491: Sample-Efficient FunSearch via Behavioral Fingerprinting for Online Bin Packing
+
+This local academic project extends https://github.com/RayZhhh/funsearch
+at commit 4b8b4e7d43287998500983d709dfa44be58fca91.
+That implementation is derived from DeepMind FunSearch (2023).
+Copied upstream files preserve Copyright 2023 DeepMind Technologies Limited
+and their Apache License, Version 2.0 headers.
+
+The original license is retained at phase1b/reference/LICENSE and copied to
+the repository root. Existing Phase 1 changes are documented in
+phase1b/reference_changes.patch. Phase 2 and Phase 3 additions and their
+limitations are documented in the corresponding reports.
+
+OR/Weibull instance literals are retained from the audited upstream snapshot.
+OR-Library attribution/provenance limitations and the missing original Weibull
+generator seed are disclosed in the dataset manifest and research reports.
+No additional dataset ownership/license claim is made here.
+
+
+Publication note: dataset-literal retention above describes the private research workspace. This public source/results export withholds all dataset and state values; only frozen IDs/hashes and data requirements are bundled.

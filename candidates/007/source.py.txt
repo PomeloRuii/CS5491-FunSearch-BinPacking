@@ -1,0 +1,16 @@
+```python
+def priority_v1(item: float, bins: np.ndarray) -> np.ndarray:
+    bins = np.asarray(bins, dtype=float)
+    residual = bins - item
+    positive = residual > 0
+    if not np.any(positive):
+        return np.zeros_like(bins)
+    pos_res = np.where(positive, residual, 1.0)
+    pos_bins = np.where(positive, bins, 1.0)
+    ratio = item / pos_bins
+    log_term = np.log(ratio)
+    waste = pos_res
+    fill = 1.0 - ratio
+    score = np.where(positive, fill * 10.0 - log_term - waste * 0.1, -np.inf)
+    return score
+```

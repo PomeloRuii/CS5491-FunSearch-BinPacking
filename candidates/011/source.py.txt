@@ -1,0 +1,15 @@
+```python
+def priority_v1(item: float, bins: np.ndarray) -> np.ndarray:
+    bins = np.asarray(bins, dtype=float)
+    residual = bins - item
+    valid = residual >= 0
+    if not np.any(valid):
+        return np.zeros_like(bins)
+    r = np.where(valid, residual, 1.0)
+    r_safe = np.where(r > 0, r, 1.0)
+    fit = item / r_safe
+    waste = r_safe
+    score = -fit * waste
+    score = np.where(valid, score, -np.inf)
+    return score
+```

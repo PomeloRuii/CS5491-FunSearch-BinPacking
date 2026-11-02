@@ -1,0 +1,14 @@
+{
+  "dataset": "development",
+  "state_set": "fingerprint",
+  "sizes": [
+    16,
+    64,
+    128
+  ],
+  "actions": [
+    "full",
+    "fingerprint",
+    "fused"
+  ]
+}

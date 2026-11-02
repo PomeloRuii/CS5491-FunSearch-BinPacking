@@ -1,0 +1,13 @@
+```python
+def priority_v1(item: float, bins: np.ndarray) -> np.ndarray:
+    bins = np.asarray(bins, dtype=float)
+    residual = bins - item
+    residual = np.where(residual >= 0, residual, 0.0)
+    max_residual = np.max(residual)
+    if max_residual <= 0:
+        return np.zeros_like(bins)
+    norm = residual / max_residual
+    item_ratio = item / (item + max_residual)
+    score = norm * (1.0 - item_ratio) + (1.0 - norm) * item_ratio * 0.5
+    return score
+```

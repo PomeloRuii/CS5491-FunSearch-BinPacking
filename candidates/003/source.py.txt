@@ -1,0 +1,13 @@
+```python
+def priority_v1(item: float, bins: np.ndarray) -> np.ndarray:
+    bins = np.asarray(bins, dtype=float)
+    residual = bins - item
+    residual = np.where(residual >= 0, residual, 0.0)
+    used = np.where(bins > 0, 1.0, 0.0)
+    waste = residual
+    waste_penalty = waste * (1.0 + 0.1 * used)
+    fit_score = -waste_penalty
+    diversity = np.where(residual > 0, 1.0 / (residual + 1e-9), 0.0)
+    score = fit_score + 0.5 * diversity
+    return score
+```

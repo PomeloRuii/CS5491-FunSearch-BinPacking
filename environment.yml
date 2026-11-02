@@ -1,0 +1,12 @@
+name: cs5491-funsearch
+channels:
+  - defaults
+dependencies:
+  - python=3.10.22
+  - pip
+  - pip:
+      - numpy==1.26.4
+      - scipy==1.13.1
+      - absl-py==2.1.0
+# Phase 3 generation uses Python's standard-library HTTP client, not an SDK.
+# Existing broader environment freeze: phase1b/environment.freeze.txt.

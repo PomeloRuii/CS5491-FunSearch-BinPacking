@@ -1,0 +1,17 @@
+{
+  "partition_seed": 5491,
+  "state_seed": 5492,
+  "database_seed": 5491,
+  "fingerprint_sizes": [16, 64, 128],
+  "audit_states": 256,
+  "audit_strategy": "all behavioral matches; independent containers; no trajectory updates",
+  "primary_architecture": "separate",
+  "secondary_architecture": "fused",
+  "worker_wall_seconds": 10,
+  "model": "qwen3.8:27b-q4_K_M",
+  "model_digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+  "quantization": "Q4_K_M",
+  "generation_settings_source": "../phase1b/phase1d/config.json",
+  "new_llm_requests": 0,
+  "generated_execution_enabled": false
+}

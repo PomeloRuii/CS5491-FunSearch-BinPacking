@@ -1,0 +1,546 @@
+[
+  {
+    "candidate_id": 1,
+    "wave": 1,
+    "sampling_seed": 549199013,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 8,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "a66724bdac04a126e5877291bf3277c1e1d22128da00a62184d62071628bc10e",
+    "raw_response_sha256": "9131e1055ac87a4315268bc994c30ee9467cc3a2f5099fd53ed6975085b3f5fb",
+    "prompt_sha256": "d9ce39bea627d31a1a47d9ee4cae146f25dbf6caf7be606a625818f8dda65ae6",
+    "finish_reason": "length",
+    "status": "static_rejected",
+    "failure_reason": "Candidate generation did not complete normally: length",
+    "usage": {
+      "prompt_tokens": 810,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 512,
+      "total_tokens": 1322
+    },
+    "generation_seconds": 7.126141499997175,
+    "static": {
+      "status": "FAIL"
+    }
+  },
+  {
+    "candidate_id": 2,
+    "wave": 1,
+    "sampling_seed": 549199014,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 2,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "7134640a217ccb5977494c4b723a02e243b979b70675faf49b0ef821eb4d7a23",
+    "raw_response_sha256": "90a6ba3c260b0d8119e76649e693633a0839d4c6ef1c8fbb611df06a8e96ed77",
+    "prompt_sha256": "252ca5cedd435d762bb2e1ae7a11d45bb9d3426be9fb9bc8cbf0d59e328d7a4d",
+    "finish_reason": "stop",
+    "status": "static_valid_pending_execution_approval",
+    "failure_reason": null,
+    "usage": {
+      "prompt_tokens": 810,
+      "prompt_tokens_details": {
+        "cached_tokens": 298
+      },
+      "completion_tokens": 113,
+      "total_tokens": 923
+    },
+    "generation_seconds": 1.721779499999684,
+    "static": {
+      "policy": "phase3-numerical-ast-v2",
+      "status": "PASS",
+      "operations": [
+        "np.asarray",
+        "np.where"
+      ],
+      "body_sha256": "8158c0fd0713935c9fd640c5055e281aee703448528a8929fb4647cda2358324",
+      "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+    }
+  },
+  {
+    "candidate_id": 3,
+    "wave": 1,
+    "sampling_seed": 549199015,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 9,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "507343e9dd331b4af5ea386c634bea5bc20af5e2f840004b7b46ad24ef049a92",
+    "raw_response_sha256": "fae91f66bc8b9a2c95bf4d53e238a9c7cb6d01d7d65057fd8eccff3c62768a9d",
+    "prompt_sha256": "f1c729e8099ec79ec43701d2ab3451978c4c582ea926ced29430fe5aab577b36",
+    "finish_reason": "stop",
+    "status": "static_valid_pending_execution_approval",
+    "failure_reason": null,
+    "usage": {
+      "prompt_tokens": 810,
+      "prompt_tokens_details": {
+        "cached_tokens": 298
+      },
+      "completion_tokens": 165,
+      "total_tokens": 975
+    },
+    "generation_seconds": 2.4583021999969787,
+    "static": {
+      "policy": "phase3-numerical-ast-v2",
+      "status": "PASS",
+      "operations": [
+        "np.asarray",
+        "np.where"
+      ],
+      "body_sha256": "6fbc69b555692a5911ce0daf8a4f9cb6e0d03ac453660ac70ab72aeb37e19efb",
+      "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+    }
+  },
+  {
+    "candidate_id": 4,
+    "wave": 1,
+    "sampling_seed": 549199016,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 4,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "82870cc2783e6af1ac537fe0bfd0798ef274e24065429fe3a8b43ad6085db638",
+    "raw_response_sha256": "9403d585a3f620be25e62c1928a5af5516c72119515ad6c43d60ff05f73062e5",
+    "prompt_sha256": "0d2d99b5ed6b27470751b179368c8f40319a76c3dce2f3cc9c391478b81dc7ae",
+    "finish_reason": "stop",
+    "status": "static_rejected",
+    "failure_reason": "Only allowlisted direct numerical calls are supported",
+    "usage": {
+      "prompt_tokens": 810,
+      "prompt_tokens_details": {
+        "cached_tokens": 298
+      },
+      "completion_tokens": 233,
+      "total_tokens": 1043
+    },
+    "generation_seconds": 3.4109293000001344,
+    "static": {
+      "status": "FAIL"
+    }
+  },
+  {
+    "candidate_id": 5,
+    "wave": 1,
+    "sampling_seed": 549199017,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 1,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "9e178dfacb0c8d17308c4e5757a79d69fb51e076ea44a6ed7cc2bd2fb443e212",
+    "raw_response_sha256": "d4140b60acf1898726cf800b061a17b17350835303ee5e77e9f9def1cecc4acd",
+    "prompt_sha256": "fd45d39ead1c17affec9a72c5be577750d25feddd751e53db52d61937b3fe979",
+    "finish_reason": "stop",
+    "status": "static_valid_pending_execution_approval",
+    "failure_reason": null,
+    "usage": {
+      "prompt_tokens": 810,
+      "prompt_tokens_details": {
+        "cached_tokens": 298
+      },
+      "completion_tokens": 121,
+      "total_tokens": 931
+    },
+    "generation_seconds": 1.904046699997707,
+    "static": {
+      "policy": "phase3-numerical-ast-v2",
+      "status": "PASS",
+      "operations": [
+        "max",
+        "np.asarray",
+        "np.log",
+        "np.where"
+      ],
+      "body_sha256": "def220b6d084752dc3ea50736d18bfe78b1e06b38635c25a936b023cd7ce9f29",
+      "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+    }
+  },
+  {
+    "candidate_id": 6,
+    "wave": 1,
+    "sampling_seed": 549199018,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 1,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "b670e27639a65ec5afefc99ac8d36441292f92ec1aa07c64ca11406d39e3effe",
+    "raw_response_sha256": "78360628d0aa38346959f53d73e262512e38ff01eb67a45af4df3c8bb451a2ba",
+    "prompt_sha256": "fd45d39ead1c17affec9a72c5be577750d25feddd751e53db52d61937b3fe979",
+    "finish_reason": "stop",
+    "status": "static_rejected",
+    "failure_reason": "Only allowlisted direct numerical calls are supported",
+    "usage": {
+      "prompt_tokens": 810,
+      "prompt_tokens_details": {
+        "cached_tokens": 806
+      },
+      "completion_tokens": 161,
+      "total_tokens": 971
+    },
+    "generation_seconds": 2.261344200000167,
+    "static": {
+      "status": "FAIL"
+    }
+  },
+  {
+    "candidate_id": 7,
+    "wave": 1,
+    "sampling_seed": 549199019,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 9,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "151f79fbb96d067328dcd2e8a0bd777086f4ea03bf2c84df8270f355872f0032",
+    "raw_response_sha256": "121b94cd1b40b327c33f997389a6330aa1176df08a4d95914e15ce18a355827d",
+    "prompt_sha256": "f1c729e8099ec79ec43701d2ab3451978c4c582ea926ced29430fe5aab577b36",
+    "finish_reason": "stop",
+    "status": "static_rejected",
+    "failure_reason": "Only allowlisted direct numerical calls are supported",
+    "usage": {
+      "prompt_tokens": 810,
+      "prompt_tokens_details": {
+        "cached_tokens": 298
+      },
+      "completion_tokens": 171,
+      "total_tokens": 981
+    },
+    "generation_seconds": 2.517657299998973,
+    "static": {
+      "status": "FAIL"
+    }
+  },
+  {
+    "candidate_id": 8,
+    "wave": 1,
+    "sampling_seed": 549199020,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 3,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "ea0f7ec5f03d783146e1525c8fc09569bbe19676ece402da6a1560683a677a4a",
+    "raw_response_sha256": "fdcc30ee3444aa4f978025ea0a1e4665d85a7812e1364b821e4f022dbf1a0b1f",
+    "prompt_sha256": "a0d2c965d8a57d61c400d778559301e7e8071ea2f3eef28eb73ad54a4825e59d",
+    "finish_reason": "stop",
+    "status": "static_valid_pending_execution_approval",
+    "failure_reason": null,
+    "usage": {
+      "prompt_tokens": 810,
+      "prompt_tokens_details": {
+        "cached_tokens": 298
+      },
+      "completion_tokens": 240,
+      "total_tokens": 1050
+    },
+    "generation_seconds": 3.5520271999994293,
+    "static": {
+      "policy": "phase3-numerical-ast-v2",
+      "status": "PASS",
+      "operations": [
+        "float",
+        "np.asarray",
+        "np.max",
+        "np.where",
+        "np.zeros_like"
+      ],
+      "body_sha256": "8bae9751e672aa5700ee7446a043a338dedb806495bda9f9539aeab94e9611d8",
+      "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+    }
+  },
+  {
+    "candidate_id": 9,
+    "wave": 2,
+    "sampling_seed": 549199021,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 8,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "20d25e5bd24f7159578f59fabb60bac39c3a4b28d6a0747d9d76b9b13c12a811",
+    "raw_response_sha256": "bdce804ef217207e9045409dd9011aad7cd6db8168d3f9d4d91d1936654a0aab",
+    "prompt_sha256": "424182d703ae5e8801b4e77f1a43f0a8c684988ac935990a691c5231838c03d9",
+    "finish_reason": "stop",
+    "status": "static_rejected",
+    "failure_reason": "Only ordinary name rebinding is allowed; writes and np rebinding refused",
+    "usage": {
+      "prompt_tokens": 778,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 220,
+      "total_tokens": 998
+    },
+    "generation_seconds": 3.622256099999504,
+    "static": {
+      "status": "FAIL"
+    }
+  },
+  {
+    "candidate_id": 10,
+    "wave": 2,
+    "sampling_seed": 549199022,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 4,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "a818663861cc8aa682c356e4a8f9d7cd9c3de03d7c2c8a371dcdf570ad8ea5ce",
+    "raw_response_sha256": "d517440d2915271f8512ec21fb84a2b0841cadc53639acfca4fabb12d0619c85",
+    "prompt_sha256": "75b18af2c80f3ac2173ab1e18bd216ced9c4bd1c1516c7ce5d37f96841eca830",
+    "finish_reason": "stop",
+    "status": "static_valid_pending_execution_approval",
+    "failure_reason": null,
+    "usage": {
+      "prompt_tokens": 778,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 144,
+      "total_tokens": 922
+    },
+    "generation_seconds": 2.438900699999067,
+    "static": {
+      "policy": "phase3-numerical-ast-v2",
+      "status": "PASS",
+      "operations": [
+        "np.asarray",
+        "np.max",
+        "np.where",
+        "np.zeros_like"
+      ],
+      "body_sha256": "27ad5dc40179decb1e59be2017202df3eb97acea1010f42ede34d923216f98bc",
+      "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+    }
+  },
+  {
+    "candidate_id": 11,
+    "wave": 2,
+    "sampling_seed": 549199023,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 5,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "37cdfac90f901cc2f3ec93750dd2963981989c29badc1e221dfcb1f72064538a",
+    "raw_response_sha256": "3351fb024ba462a924097985c08db354bf64a7ebe028f5ec9a8f769fcdd8f337",
+    "prompt_sha256": "a2d238d05722b3ec9488ad9313ea94805c4dc00af4a9184288a9729c19a1a817",
+    "finish_reason": "stop",
+    "status": "static_rejected",
+    "failure_reason": "Only allowlisted direct numerical calls are supported",
+    "usage": {
+      "prompt_tokens": 778,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 141,
+      "total_tokens": 919
+    },
+    "generation_seconds": 2.372728199999983,
+    "static": {
+      "status": "FAIL"
+    }
+  },
+  {
+    "candidate_id": 12,
+    "wave": 2,
+    "sampling_seed": 549199024,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 4,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "dfabb4f3f3d8c78f69f630eadd5a32688ab35b225c62cac5a6f029a35974a0fc",
+    "raw_response_sha256": "9f45055c98a87057f4372dac8d15d0e5a3505e40a80383f104f6ebb77230f5f1",
+    "prompt_sha256": "75b18af2c80f3ac2173ab1e18bd216ced9c4bd1c1516c7ce5d37f96841eca830",
+    "finish_reason": "stop",
+    "status": "static_valid_pending_execution_approval",
+    "failure_reason": null,
+    "usage": {
+      "prompt_tokens": 778,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 149,
+      "total_tokens": 927
+    },
+    "generation_seconds": 2.5158240999990085,
+    "static": {
+      "policy": "phase3-numerical-ast-v2",
+      "status": "PASS",
+      "operations": [
+        "np.asarray",
+        "np.max",
+        "np.where",
+        "np.zeros_like"
+      ],
+      "body_sha256": "c3b80bb7adddbfc463f67514a808618e1f9438a016f9675ae0c0cbaeff86a681",
+      "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+    }
+  },
+  {
+    "candidate_id": 13,
+    "wave": 2,
+    "sampling_seed": 549199025,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 7,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "410a1015bd3a639c5e65325ab25e89ae9259b69d09b811c56a41cb25a372200f",
+    "raw_response_sha256": "a35aaf94e079bcb85877f52456d2a2d27f592fc95328476ca6fb1719d3fec8fe",
+    "prompt_sha256": "c76f6421d0d26b13835c6a0d13380f52027ec73312e4ad060b8593439d981814",
+    "finish_reason": "stop",
+    "status": "static_valid_pending_execution_approval",
+    "failure_reason": null,
+    "usage": {
+      "prompt_tokens": 778,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 83,
+      "total_tokens": 861
+    },
+    "generation_seconds": 1.5304008000020985,
+    "static": {
+      "policy": "phase3-numerical-ast-v2",
+      "status": "PASS",
+      "operations": [
+        "np.asarray",
+        "np.maximum"
+      ],
+      "body_sha256": "c04462ad80492dbeb0737ae00660000694288c5db2874287a5a7905da074889f",
+      "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+    }
+  },
+  {
+    "candidate_id": 14,
+    "wave": 2,
+    "sampling_seed": 549199026,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 9,
+    "version_generated": 2,
+    "expected_name": "priority_v2",
+    "source_sha256": "fd19275a66d36fa879ae54614c80bca9e24d7c8353dda4b97228f33b0158996d",
+    "raw_response_sha256": "eac9cfa45d4ab0db8bf36388df60cda0a2560379ea5538514615e8649a4f803b",
+    "prompt_sha256": "a5b5977dec81daed1164ed5bf11cd90e317bf680132525a6e0b8b5f51817dd33",
+    "finish_reason": "stop",
+    "status": "static_valid_pending_execution_approval",
+    "failure_reason": null,
+    "usage": {
+      "prompt_tokens": 1063,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 166,
+      "total_tokens": 1229
+    },
+    "generation_seconds": 2.852304500000173,
+    "static": {
+      "policy": "phase3-numerical-ast-v2",
+      "status": "PASS",
+      "operations": [
+        "np.asarray",
+        "np.where"
+      ],
+      "body_sha256": "6fbc69b555692a5911ce0daf8a4f9cb6e0d03ac453660ac70ab72aeb37e19efb",
+      "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+    }
+  },
+  {
+    "candidate_id": 15,
+    "wave": 2,
+    "sampling_seed": 549199027,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 9,
+    "version_generated": 2,
+    "expected_name": "priority_v2",
+    "source_sha256": "fd19275a66d36fa879ae54614c80bca9e24d7c8353dda4b97228f33b0158996d",
+    "raw_response_sha256": "be30a9e7c508dfc120399d9d3b21e3faee10eb2370355b91a158b12c75f2c021",
+    "prompt_sha256": "a5b5977dec81daed1164ed5bf11cd90e317bf680132525a6e0b8b5f51817dd33",
+    "finish_reason": "stop",
+    "status": "static_valid_pending_execution_approval",
+    "failure_reason": null,
+    "usage": {
+      "prompt_tokens": 1063,
+      "prompt_tokens_details": {
+        "cached_tokens": 1059
+      },
+      "completion_tokens": 166,
+      "total_tokens": 1229
+    },
+    "generation_seconds": 2.586570199997368,
+    "static": {
+      "policy": "phase3-numerical-ast-v2",
+      "status": "PASS",
+      "operations": [
+        "np.asarray",
+        "np.where"
+      ],
+      "body_sha256": "6fbc69b555692a5911ce0daf8a4f9cb6e0d03ac453660ac70ab72aeb37e19efb",
+      "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+    }
+  },
+  {
+    "candidate_id": 16,
+    "wave": 2,
+    "sampling_seed": 549199028,
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "quantization": "Q4_K_M",
+    "island_id": 1,
+    "version_generated": 1,
+    "expected_name": "priority_v1",
+    "source_sha256": "f9169881de10cc483dc36f08944390624ce7c9b203f05285c4ee3dcdc3bef0b1",
+    "raw_response_sha256": "79708b038074a1371b1d3f4522ac5afea4810923a14693016ee2f880f510c0b6",
+    "prompt_sha256": "dcc534cc7a44f0bba78db16bf97f33894cf951e7aac10bd76ea72c0aed55695e",
+    "finish_reason": "stop",
+    "status": "static_valid_pending_execution_approval",
+    "failure_reason": null,
+    "usage": {
+      "prompt_tokens": 778,
+      "prompt_tokens_details": {
+        "cached_tokens": 39
+      },
+      "completion_tokens": 159,
+      "total_tokens": 937
+    },
+    "generation_seconds": 2.778103100001317,
+    "static": {
+      "policy": "phase3-numerical-ast-v2",
+      "status": "PASS",
+      "operations": [
+        "np.asarray",
+        "np.log",
+        "np.where"
+      ],
+      "body_sha256": "9d45e81ed99651be6ca1cf4d1916ecf7c58cc5fc07203d2d049eac4060bfad32",
+      "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+    }
+  }
+]

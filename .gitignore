@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+**/approvals/
+**/dispatch_state/
+**/test_tmp/
+*.tar
+*.pdf
+**/research_data.json
+**/states.json
+**/development_or3.json
+**/heldout*.json
+local_data/
+local_runs/
