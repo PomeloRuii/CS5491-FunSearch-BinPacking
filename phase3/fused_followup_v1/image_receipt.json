@@ -1,0 +1,77 @@
+{
+  "version": "fresh-candidate-fused-v1",
+  "images": {
+    "development": {
+      "image": "sha256:3831cb71fd9312e99e96326df8a8c4cd6d707f4f9a7cf1a35a6ddb5cf77ffb04",
+      "base": "sha256:a33f8214653b7d5368f622a860de848c20c77864db93ec9d5227373ebe2a405d",
+      "context_sha256": {
+        "candidate_worker.py": "12b46117b30b1dd8f38198cb3c5d87e214c158911cbb2dc33d3ddc6682a48d52",
+        "Dockerfile": "6b5931015e4b4375a2abf2a8657df9c35592fbe5d1574307277e5f54f6666203"
+      },
+      "rootfs_layers": [
+        "sha256:e58989146fcec76699871403b9897b5c014af1ccd85f5a9300a215e7975525d7",
+        "sha256:3c19f04e7db6642e808e1ad229c0d877d42865f2cb1af1ddc9f9bd10217113b6",
+        "sha256:09b830de5fb0a5a54f1050a5c4cd5f9ac999b4692506df84ba85c925f1a8a0fd",
+        "sha256:a403b3f684d654bd6ccba458f4e7d1aa7b3ca642fb8297c07b913f83fa4b809a",
+        "sha256:1468bf3170d69bcccea1c92a952babdedac02493beb03fd9659bbba9e5678b63",
+        "sha256:232305ec4bd84dde2f5d90557aca024c4925421da20f4f7e9a2fdf9fd9af3d8b",
+        "sha256:c7630d6f1c87f11709583670d427255c98766c3b2da3235b694a200d55bf0f0d",
+        "sha256:1d95c34c8731d12388c6f519ddd8338cfe1b253ba77616ba6785158691165a56",
+        "sha256:589e3bbcd81944f1d652947a78c54dae6d9b2d7fb26a37097d83002cc97b1d14",
+        "sha256:66337e18f3f4731c2148c55a9c23398cb549e049de717e8c154e0bc40b98e3f8",
+        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+        "sha256:7dbb1ce9c836551e80ffe34095796d6ddc56cea30387d9971c00eb77eea004e5",
+        "sha256:4bf973751731422b2d94f9dbe5277ff9cdf046b8445d22ca4bda1be7aad85707"
+      ],
+      "runtime_container_validation": "NOT TESTED; first three authorized tasks required"
+    },
+    "boundary": {
+      "image": "sha256:502f39c56262695ada9ed47a8454ac750508187f62d681e805787a42dc91a954",
+      "base": "sha256:5be5aaecb962a41567bc8041f1e9e3432cb085b037fe057f9a562630b2e4b370",
+      "context_sha256": {
+        "candidate_worker.py": "12b46117b30b1dd8f38198cb3c5d87e214c158911cbb2dc33d3ddc6682a48d52",
+        "common.py": "194f71de7af6c032f5e421635c080bba5dd0b33dcadf810707d855bd02843401",
+        "dataset_scope.json": "20c0867614e433b6fd4ce0b60b684546beb032c85671c5d1ca89eee496d678ef",
+        "development_or3.json": "3579f162460239d76f3489f0b6859a9880227a34ed3adcdf49e6357d99e1e807",
+        "Dockerfile": "2f7226deec537ebd889f91b79139155943ff91527227b18f170bc7e3d6ccabfb",
+        "interface.py": "bbbeaaa0016da92d431aa91f0e371609e02ff64427faa23980fdef6c90153542",
+        "LICENSE": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac",
+        "phase1d_worker.py": "204f4f8a49e07d6c337fdab350e717f255c83007c4cdde0d500f7f5b7f499a35",
+        "research_core.py": "dff3008f29cf0bc28f7f30033772721067fe9d55012073d2a34a99a27127bfee",
+        "research_data.json": "7b944200e60acdc4f524df34ca963d159f6803f663a50534cd0798597cf46985",
+        "specification.txt": "0d1ca9011b1f97d4a2740dca86f00888dc234b29cc2b4778ef0637e8d0fe50df",
+        "states.json": "5ad879dd36c83b7cce2758b5835e1836676603de1927b76e16ebf978b5ce41df",
+        "static_policy.py": "a544367cc0aeb105dbce78017f4dc4040d686e86cc91006f4ef93439f36cea71",
+        "worker.py": "894e384f74d8ce30da9bd6e10a53faebcfc9fec7ea49c8d5c277cf6af52f3787"
+      },
+      "rootfs_layers": [
+        "sha256:e58989146fcec76699871403b9897b5c014af1ccd85f5a9300a215e7975525d7",
+        "sha256:3c19f04e7db6642e808e1ad229c0d877d42865f2cb1af1ddc9f9bd10217113b6",
+        "sha256:09b830de5fb0a5a54f1050a5c4cd5f9ac999b4692506df84ba85c925f1a8a0fd",
+        "sha256:a403b3f684d654bd6ccba458f4e7d1aa7b3ca642fb8297c07b913f83fa4b809a",
+        "sha256:1468bf3170d69bcccea1c92a952babdedac02493beb03fd9659bbba9e5678b63",
+        "sha256:232305ec4bd84dde2f5d90557aca024c4925421da20f4f7e9a2fdf9fd9af3d8b",
+        "sha256:c7630d6f1c87f11709583670d427255c98766c3b2da3235b694a200d55bf0f0d",
+        "sha256:1d95c34c8731d12388c6f519ddd8338cfe1b253ba77616ba6785158691165a56",
+        "sha256:4c01257dbf023e30d73dbe1437830512caae9a4c24bd3205bb46e5f5d3460980",
+        "sha256:37ec65b335f2b0ce81f4893d508f454ab4fe2d01c927ff4dae9d19a41ba079b0",
+        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      ],
+      "runtime_container_validation": "NOT TESTED; first three authorized tasks required"
+    }
+  },
+  "research_tasks_started": 0,
+  "new_model_calls": 0,
+  "new_candidate_executions": 0,
+  "network": "none",
+  "pull": false,
+  "initial_failed_build": "development_build.log; bare image-ID FROM triggered failed registry metadata resolution, no image/candidate task produced",
+  "local_base_aliases": {
+    "cs5491-followup-local:dev-a33f8214653b": "sha256:a33f8214653b7d5368f622a860de848c20c77864db93ec9d5227373ebe2a405d",
+    "cs5491-followup-local:python-5be5aaecb962": "sha256:5be5aaecb962a41567bc8041f1e9e3432cb085b037fe057f9a562630b2e4b370",
+    "cs5491-followup-local:numpy-a10efedb2382": "sha256:a10efedb2382f51ba013ce8581e8bc792cdc1c14fcbf0a651e93a7992f859a23"
+  },
+  "development_dataset_sha256": "a9709f23f17aaf0e083a989e1b5ccf53ac91221987128d5480ff1093f594c401",
+  "old_state_bank_sha256": "d69fc118d9ab4a464a47885f17e44a0b7dcc92072515d837518db795c0d35cf5",
+  "boundary_state_bank_sha256": "cb987d6710d87b3926ddf6d181a9bae83507bea14ff39e59d5967dd9484ef201"
+}

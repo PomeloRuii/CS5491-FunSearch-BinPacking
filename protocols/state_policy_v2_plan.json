@@ -1,0 +1,48 @@
+{
+  "version": "state-policy-v2.0-design",
+  "implemented": false,
+  "execution_authorized": false,
+  "not_an_executable_manifest": true,
+  "specification": "docs/NEXT_STATE_POLICY_V2.md",
+  "sizes": [
+    16,
+    64,
+    128
+  ],
+  "state_policy_factors": [
+    "S0-original",
+    "S2-stratified"
+  ],
+  "common_proposed_controls": [
+    "C1-terminal-source-index",
+    "F1-recoverable-probe-fallback"
+  ],
+  "arrival_regions": [
+    "(0,1/4]",
+    "(1/4,1/2)",
+    "[1/2,3/4]",
+    "(3/4,1)"
+  ],
+  "boundary_flags": [
+    "1/4",
+    "1/3",
+    "1/2",
+    "2/3",
+    "3/4"
+  ],
+  "seeds": {
+    "split": 54921000,
+    "construction": 54921001,
+    "validation": 54921002,
+    "audit_order": 54921003,
+    "timing_order": 54921004
+  },
+  "final_heldout_access": false,
+  "old_challenges_role": "diagnostics only",
+  "new_validation_claim": "Prospective selection/access separation on historically exposed development instances; not pristine held-out evidence",
+  "proposed_container_ceiling": 266,
+  "proposed_full_ceiling": 255,
+  "proposed_fingerprint_ceiling": 223,
+  "new_llm_calls_allocated": 0,
+  "main_campaign_enabled": false
+}

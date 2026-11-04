@@ -2,7 +2,7 @@
   "schema": "clean-incremental-research-release-v4",
   "target_repository": "https://github.com/PomeloRuii/CS5491-FunSearch-BinPacking.git",
   "original_public_commit": "bbc1855fd75c34633098224eb620eedea7a7c9eb",
-  "parent_public_commit": "bbc1855fd75c34633098224eb620eedea7a7c9eb",
+  "parent_public_commit": "6d67c83dff181f0dd5d472c43000793272e56b6d",
   "files": [
     {
       "path": ".gitattributes",
@@ -288,6 +288,11 @@
       "path": "candidates/ledger.json",
       "bytes": 18896,
       "sha256": "766496fc77bfc151143942d9abb3a4a24f0961fad409538f245767bb89fad3df"
+    },
+    {
+      "path": "candidates/pool.json",
+      "bytes": 27342,
+      "sha256": "21ff15950920f06ccc146a5b79394987ff52f260e562ef1f195fe7d7d5cbe94d"
     },
     {
       "path": "data/DATA_REQUIREMENTS.json",
@@ -680,6 +685,76 @@
       "sha256": "15a5c519e80c42c3a991584809d1568c149c7fdd497b33c08a8e430ba593ea3f"
     },
     {
+      "path": "phase3/fused_followup_v1/__init__.py",
+      "bytes": 80,
+      "sha256": "b6c59806806eb87580c611d62cc54478fa7c1be9655cab12f27441d77ec294b1"
+    },
+    {
+      "path": "phase3/fused_followup_v1/authority.py",
+      "bytes": 5659,
+      "sha256": "d70213b1854f5df4874abf6cae65d47c33493f7a94fc5e683a08aab4e610b166"
+    },
+    {
+      "path": "phase3/fused_followup_v1/build_images.py",
+      "bytes": 5225,
+      "sha256": "e50915ae78656baadf4ffa42d49dd81c482aba282647a5d2ba5992e341ab5140"
+    },
+    {
+      "path": "phase3/fused_followup_v1/fixtures/best_fit.py.txt",
+      "bytes": 43,
+      "sha256": "888781e10ef990dc9a1623ad297c885be281c7cf65650ba92db07dbb46fca632"
+    },
+    {
+      "path": "phase3/fused_followup_v1/image_receipt.json",
+      "bytes": 5334,
+      "sha256": "cf363663a7d0cb682ec208f41725480e5f8dbf3151ec9a72695e32e9e4ab8bcb"
+    },
+    {
+      "path": "phase3/fused_followup_v1/protocol.py",
+      "bytes": 3766,
+      "sha256": "d1d308ae360100bfe9ab75be1e81c0ac755fef3b1e1b948faf0959cf62bfef0c"
+    },
+    {
+      "path": "phase3/fused_followup_v1/recovery_v1_1/__init__.py",
+      "bytes": 80,
+      "sha256": "cb9650543d7bed4a016896df1aa781a8d97463cd97087f4a01c5ac8ef7998997"
+    },
+    {
+      "path": "phase3/fused_followup_v1/recovery_v1_1/windows_popen_guard.py",
+      "bytes": 3012,
+      "sha256": "39ccbd0fb069ac875d097dac0653780e138214960155c08ae8ca29517365790c"
+    },
+    {
+      "path": "phase3/fused_followup_v1/recovery_v1_2/__init__.py",
+      "bytes": 81,
+      "sha256": "ddbc780522fed731df39f37e2052da9a7d44a2e2e0cd5d23614e2355933da02f"
+    },
+    {
+      "path": "phase3/fused_followup_v1/recovery_v1_2/execute_observed.py",
+      "bytes": 6278,
+      "sha256": "58c1f5f3be8905a7a4ceeab827fcec0b60dd9a04270874215d1adb6a43b2317e"
+    },
+    {
+      "path": "phase3/fused_followup_v1/recovery_v1_2/run.py",
+      "bytes": 16680,
+      "sha256": "ae48c6cf5a20a438ece488c54d2ae59c39d8abd61ca156597c0c70addd4884ec"
+    },
+    {
+      "path": "phase3/fused_followup_v1/replay_v1.py",
+      "bytes": 1718,
+      "sha256": "37c795b3f18f403c3b23199667a905845898033b6a6ea712fa93b20185a2e5e4"
+    },
+    {
+      "path": "phase3/fused_followup_v1/runner.py",
+      "bytes": 3579,
+      "sha256": "5219789d27bfcf9009fa3ee9e690b8749a21d883380f36e989eb746286f9173b"
+    },
+    {
+      "path": "phase3/fused_followup_v1/worker_v1.py",
+      "bytes": 5330,
+      "sha256": "12b46117b30b1dd8f38198cb3c5d87e214c158911cbb2dc33d3ddc6682a48d52"
+    },
+    {
       "path": "phase3/generation3.py",
       "bytes": 7501,
       "sha256": "22c6f10023b3e8f4616beda45ad6b62c39d81f0989c98cc99f0c93fa93fa9836"
@@ -810,6 +885,41 @@
       "sha256": "a544367cc0aeb105dbce78017f4dc4040d686e86cc91006f4ef93439f36cea71"
     },
     {
+      "path": "phase3/state_policy_v2/__init__.py",
+      "bytes": 90,
+      "sha256": "5c0ac55247fc320626fe4cb825a6c688c7524691838996daef58c0bbe9763730"
+    },
+    {
+      "path": "phase3/state_policy_v2/freeze.py",
+      "bytes": 3865,
+      "sha256": "6b7bf57cd18191d467b35e8b78b67187305631c6fba8307c9eb473432d237bb0"
+    },
+    {
+      "path": "phase3/state_policy_v2/replay.py",
+      "bytes": 9608,
+      "sha256": "e364e7a2c5c52fc96f58a54508f699f67c665304de3c795084b3653b56707066"
+    },
+    {
+      "path": "phase3/state_policy_v2/settings.py",
+      "bytes": 692,
+      "sha256": "05221fd354985106a2f1b3e1dff58887591881d25417462d99303fbcf8a17897"
+    },
+    {
+      "path": "phase3/state_policy_v2/states.py",
+      "bytes": 13399,
+      "sha256": "03a9c6158e203ca433d4a64ee3a5caf98f40fa725e3dfe71d848988106f5693e"
+    },
+    {
+      "path": "phase3/state_policy_v2/terminal_index.py",
+      "bytes": 1923,
+      "sha256": "70798f8bf5024a6dbae26dbcf1f647905e0add582f7827797834f71f294081ae"
+    },
+    {
+      "path": "phase3/state_policy_v2/worker_v2.py",
+      "bytes": 8450,
+      "sha256": "6584adeb4b1c25fce71deb3e7a23ab8454ba0c595d66a7625d53cc4e384267f4"
+    },
+    {
       "path": "phase3/static_policy.py",
       "bytes": 4814,
       "sha256": "a544367cc0aeb105dbce78017f4dc4040d686e86cc91006f4ef93439f36cea71"
@@ -833,6 +943,26 @@
       "path": "phase3/worker3.py",
       "bytes": 3173,
       "sha256": "62d0d4bad0e12ee9f8c7c02f5b2adbc991bd5e6046620fa965092124fa5da0a8"
+    },
+    {
+      "path": "protocols/fused_v12_method.json",
+      "bytes": 1235,
+      "sha256": "17cc968645c144f4dd6c8cc9db547f08af64bfa126ee378c586a77b44aee4eef"
+    },
+    {
+      "path": "protocols/post_publication_experiment_v1.json",
+      "bytes": 6897,
+      "sha256": "af8605bf73a83d02b51485b2615e57160245f92c6aef3d7e6dc14c851a3aae43"
+    },
+    {
+      "path": "protocols/state_policy_v2_measured.json",
+      "bytes": 3390,
+      "sha256": "c9c3ad33f240370dae386cd24e581bb80cd05e02127bd604c942103ee67484d1"
+    },
+    {
+      "path": "protocols/state_policy_v2_plan.json",
+      "bytes": 1137,
+      "sha256": "3fc200ad29544ab67f927ea96d0a043cf7493d152ad877fc9d20ce68bf6a2be2"
     },
     {
       "path": "research/original_comparison_checkpoint.json",

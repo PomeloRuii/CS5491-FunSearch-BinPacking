@@ -1,0 +1,556 @@
+{
+  "schema": "public-frozen-pool-projection-v1",
+  "private_pool_sha256": "f28769d5f6cdbceef7c68c610d271b3cf979d36d3a7b9a856d356372c5dd286f",
+  "candidates": [
+    {
+      "candidate_id": 1,
+      "wave": 1,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199013,
+      "island_id": 8,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "a66724bdac04a126e5877291bf3277c1e1d22128da00a62184d62071628bc10e",
+      "finish_reason": "length",
+      "generation_seconds": 7.126141499997175,
+      "usage": {
+        "prompt_tokens": 810,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 512,
+        "total_tokens": 1322
+      },
+      "status": "static_rejected",
+      "failure_reason": "Candidate generation did not complete normally: length",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    used = residual > 0\n    inv = np.where(used, 1.0 / np.where(used, residual, 1.0), 0.0)\n    inv_sq = inv * inv\n    inv_cu = inv * inv_sq\n    inv_qu = inv_cu * inv\n    inv_qui = inv_qu * inv\n    inv_six = inv_qui * inv\n    inv_sev = inv_six * inv\n    inv_eig = inv_sev * inv\n    inv_nin = inv_eig * inv\n    inv_ten = inv_nin * inv\n    inv_ele = inv_ten * inv\n    inv_twe = inv_ele * inv\n    inv_thi = inv_twe * inv\n    inv_fou = inv_thi * inv\n    inv_fiv = inv_fou * inv\n    inv_sixt = inv_fiv * inv\n    inv_seve = inv_sixt * inv\n    inv_eigh = inv_seve * inv\n    inv_nint = inv_eigh * inv\n    inv_tent = inv_nint * inv\n    inv_eleve = inv_tent * inv\n    inv_twel = inv_eleve * inv\n    inv_thir = inv_twel * inv\n    inv_fourt = inv_thir * inv\n    inv_fif = inv_fourt * inv\n    inv_sixt = inv_fif * inv\n    inv_seve = inv_sixt * inv\n    inv_eigh = inv_seve * inv\n    inv_nint = inv_eigh * inv\n    inv_tent = inv_nint * inv\n    inv_eleve = inv_tent * inv\n    inv_twel = inv_eleve * inv\n    inv_thir = inv_twel * inv\n    inv_fourt = inv_thir * inv\n    inv_fif = inv_fourt * inv\n    inv_sixt = inv_fif * inv\n    inv_seve = inv_sixt * inv\n    inv_eigh = inv_seve * inv\n    inv_nint = inv_eigh * inv\n    inv_tent = inv_nint * inv\n    inv_eleve = inv_tent * inv",
+      "static": {
+        "status": "FAIL"
+      },
+      "source_file": "001/source.py.txt"
+    },
+    {
+      "candidate_id": 2,
+      "wave": 1,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199014,
+      "island_id": 2,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "7134640a217ccb5977494c4b723a02e243b979b70675faf49b0ef821eb4d7a23",
+      "finish_reason": "stop",
+      "generation_seconds": 1.721779499999684,
+      "usage": {
+        "prompt_tokens": 810,
+        "prompt_tokens_details": {
+          "cached_tokens": 298
+        },
+        "completion_tokens": 113,
+        "total_tokens": 923
+      },
+      "status": "static_valid_pending_execution_approval",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    used = residual > 0\n    base = np.where(used, 1.0 / (residual + 1e-9), 0.0)\n    waste = residual\n    penalty = np.where(used, waste * waste, 0.0)\n    scores = base - penalty\n    return scores\n```",
+      "static": {
+        "policy": "phase3-numerical-ast-v2",
+        "status": "PASS",
+        "operations": [
+          "np.asarray",
+          "np.where"
+        ],
+        "body_sha256": "8158c0fd0713935c9fd640c5055e281aee703448528a8929fb4647cda2358324",
+        "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+      },
+      "source_file": "002/source.py.txt"
+    },
+    {
+      "candidate_id": 3,
+      "wave": 1,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199015,
+      "island_id": 9,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "507343e9dd331b4af5ea386c634bea5bc20af5e2f840004b7b46ad24ef049a92",
+      "finish_reason": "stop",
+      "generation_seconds": 2.4583021999969787,
+      "usage": {
+        "prompt_tokens": 810,
+        "prompt_tokens_details": {
+          "cached_tokens": 298
+        },
+        "completion_tokens": 165,
+        "total_tokens": 975
+      },
+      "status": "static_valid_pending_execution_approval",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    residual = np.where(residual >= 0, residual, 0.0)\n    used = np.where(bins > 0, 1.0, 0.0)\n    waste = residual\n    waste_penalty = waste * (1.0 + 0.1 * used)\n    fit_score = -waste_penalty\n    diversity = np.where(residual > 0, 1.0 / (residual + 1e-9), 0.0)\n    score = fit_score + 0.5 * diversity\n    return score\n```",
+      "static": {
+        "policy": "phase3-numerical-ast-v2",
+        "status": "PASS",
+        "operations": [
+          "np.asarray",
+          "np.where"
+        ],
+        "body_sha256": "6fbc69b555692a5911ce0daf8a4f9cb6e0d03ac453660ac70ab72aeb37e19efb",
+        "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+      },
+      "source_file": "003/source.py.txt"
+    },
+    {
+      "candidate_id": 4,
+      "wave": 1,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199016,
+      "island_id": 4,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "82870cc2783e6af1ac537fe0bfd0798ef274e24065429fe3a8b43ad6085db638",
+      "finish_reason": "stop",
+      "generation_seconds": 3.4109293000001344,
+      "usage": {
+        "prompt_tokens": 810,
+        "prompt_tokens_details": {
+          "cached_tokens": 298
+        },
+        "completion_tokens": 233,
+        "total_tokens": 1043
+      },
+      "status": "static_rejected",
+      "failure_reason": "Only allowlisted direct numerical calls are supported",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    valid = residual >= 0\n    if not np.any(valid):\n        return np.zeros_like(bins, dtype=float)\n    valid_residual = np.where(valid, residual, np.inf)\n    min_residual = np.min(valid_residual)\n    max_residual = np.max(np.where(valid, residual, 0.0))\n    if max_residual <= 0.0:\n        return np.where(valid, 1.0, -np.inf)\n    norm = (residual - min_residual) / (max_residual - min_residual)\n    norm = np.where(valid, norm, -np.inf)\n    waste = residual\n    waste_norm = waste / max_residual\n    waste_norm = np.where(valid, waste_norm, -np.inf)\n    score = norm - 0.5 * waste_norm\n    score = np.where(valid, score, -np.inf)\n    return score\n```",
+      "static": {
+        "status": "FAIL"
+      },
+      "source_file": "004/source.py.txt"
+    },
+    {
+      "candidate_id": 5,
+      "wave": 1,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199017,
+      "island_id": 1,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "9e178dfacb0c8d17308c4e5757a79d69fb51e076ea44a6ed7cc2bd2fb443e212",
+      "finish_reason": "stop",
+      "generation_seconds": 1.904046699997707,
+      "usage": {
+        "prompt_tokens": 810,
+        "prompt_tokens_details": {
+          "cached_tokens": 298
+        },
+        "completion_tokens": 121,
+        "total_tokens": 931
+      },
+      "status": "static_valid_pending_execution_approval",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    valid = residual >= 0\n    residual_safe = np.where(valid, residual, 1.0)\n    item_safe = max(item, 1e-12)\n    ratio = item_safe / residual_safe\n    log_ratio = np.log(ratio)\n    penalty = np.where(valid, log_ratio, -1e18)\n    return penalty\n```",
+      "static": {
+        "policy": "phase3-numerical-ast-v2",
+        "status": "PASS",
+        "operations": [
+          "max",
+          "np.asarray",
+          "np.log",
+          "np.where"
+        ],
+        "body_sha256": "def220b6d084752dc3ea50736d18bfe78b1e06b38635c25a936b023cd7ce9f29",
+        "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+      },
+      "source_file": "005/source.py.txt"
+    },
+    {
+      "candidate_id": 6,
+      "wave": 1,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199018,
+      "island_id": 1,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "b670e27639a65ec5afefc99ac8d36441292f92ec1aa07c64ca11406d39e3effe",
+      "finish_reason": "stop",
+      "generation_seconds": 2.261344200000167,
+      "usage": {
+        "prompt_tokens": 810,
+        "prompt_tokens_details": {
+          "cached_tokens": 806
+        },
+        "completion_tokens": 161,
+        "total_tokens": 971
+      },
+      "status": "static_rejected",
+      "failure_reason": "Only allowlisted direct numerical calls are supported",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    used = residual > 0\n    if np.any(used):\n        min_used = np.min(residual[used])\n        scores = np.where(used, 1.0 / (residual + 1e-12), 0.0)\n        scores = np.where(residual == min_used, scores + 1e6, scores)\n    else:\n        scores = np.where(bins > 0, 1.0 / (bins + 1e-12), 0.0)\n    return scores\n```",
+      "static": {
+        "status": "FAIL"
+      },
+      "source_file": "006/source.py.txt"
+    },
+    {
+      "candidate_id": 7,
+      "wave": 1,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199019,
+      "island_id": 9,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "151f79fbb96d067328dcd2e8a0bd777086f4ea03bf2c84df8270f355872f0032",
+      "finish_reason": "stop",
+      "generation_seconds": 2.517657299998973,
+      "usage": {
+        "prompt_tokens": 810,
+        "prompt_tokens_details": {
+          "cached_tokens": 298
+        },
+        "completion_tokens": 171,
+        "total_tokens": 981
+      },
+      "status": "static_rejected",
+      "failure_reason": "Only allowlisted direct numerical calls are supported",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    positive = residual > 0\n    if not np.any(positive):\n        return np.zeros_like(bins)\n    pos_res = np.where(positive, residual, 1.0)\n    pos_bins = np.where(positive, bins, 1.0)\n    ratio = item / pos_bins\n    log_term = np.log(ratio)\n    waste = pos_res\n    fill = 1.0 - ratio\n    score = np.where(positive, fill * 10.0 - log_term - waste * 0.1, -np.inf)\n    return score\n```",
+      "static": {
+        "status": "FAIL"
+      },
+      "source_file": "007/source.py.txt"
+    },
+    {
+      "candidate_id": 8,
+      "wave": 1,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199020,
+      "island_id": 3,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "ea0f7ec5f03d783146e1525c8fc09569bbe19676ece402da6a1560683a677a4a",
+      "finish_reason": "stop",
+      "generation_seconds": 3.5520271999994293,
+      "usage": {
+        "prompt_tokens": 810,
+        "prompt_tokens_details": {
+          "cached_tokens": 298
+        },
+        "completion_tokens": 240,
+        "total_tokens": 1050
+      },
+      "status": "static_valid_pending_execution_approval",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    used = residual > 0\n    empty = residual == 0\n    item_f = float(item)\n    max_res = np.max(residual)\n    if max_res <= 0:\n        return np.zeros_like(bins)\n    norm = residual / max_res\n    fit_score = np.where(used, norm, 0.0)\n    empty_bonus = np.where(empty, 1.0, 0.0)\n    small_item = item_f < 0.5\n    if small_item:\n        weights = np.where(used, 1.0, 0.0)\n        scores = weights * (0.5 + 0.5 * norm) + empty_bonus * 0.1\n    else:\n        scores = fit_score + empty_bonus * 0.05\n    scores = np.where(used, scores, -1e9)\n    return scores\n```",
+      "static": {
+        "policy": "phase3-numerical-ast-v2",
+        "status": "PASS",
+        "operations": [
+          "float",
+          "np.asarray",
+          "np.max",
+          "np.where",
+          "np.zeros_like"
+        ],
+        "body_sha256": "8bae9751e672aa5700ee7446a043a338dedb806495bda9f9539aeab94e9611d8",
+        "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+      },
+      "source_file": "008/source.py.txt"
+    },
+    {
+      "candidate_id": 9,
+      "wave": 2,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199021,
+      "island_id": 8,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "20d25e5bd24f7159578f59fabb60bac39c3a4b28d6a0747d9d76b9b13c12a811",
+      "finish_reason": "stop",
+      "generation_seconds": 3.622256099999504,
+      "usage": {
+        "prompt_tokens": 778,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 220,
+        "total_tokens": 998
+      },
+      "status": "static_rejected",
+      "failure_reason": "Only ordinary name rebinding is allowed; writes and np rebinding refused",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    valid = residual >= 0\n    if not np.any(valid):\n        return np.zeros_like(bins)\n    valid_residual = residual[valid]\n    valid_bins = bins[valid]\n    mean_residual = np.mean(valid_residual)\n    std_residual = np.std(valid_residual)\n    if std_residual < 1e-12:\n        z_scores = np.zeros_like(valid_residual)\n    else:\n        z_scores = (valid_residual - mean_residual) / std_residual\n    item_ratio = item / np.where(valid_bins > 0, valid_bins, 1.0)\n    waste_penalty = item_ratio * 0.5\n    scores = z_scores - waste_penalty\n    result = np.full_like(bins, -1e18)\n    result[valid] = scores\n    return result\n```",
+      "static": {
+        "status": "FAIL"
+      },
+      "source_file": "009/source.py.txt"
+    },
+    {
+      "candidate_id": 10,
+      "wave": 2,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199022,
+      "island_id": 4,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "a818663861cc8aa682c356e4a8f9d7cd9c3de03d7c2c8a371dcdf570ad8ea5ce",
+      "finish_reason": "stop",
+      "generation_seconds": 2.438900699999067,
+      "usage": {
+        "prompt_tokens": 778,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 144,
+        "total_tokens": 922
+      },
+      "status": "static_valid_pending_execution_approval",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    residual = np.where(residual >= 0, residual, 0.0)\n    max_residual = np.max(residual)\n    if max_residual <= 0:\n        return np.zeros_like(bins)\n    norm = residual / max_residual\n    item_ratio = item / (item + max_residual)\n    score = norm * (1.0 - item_ratio) + (1.0 - norm) * item_ratio * 0.5\n    return score\n```",
+      "static": {
+        "policy": "phase3-numerical-ast-v2",
+        "status": "PASS",
+        "operations": [
+          "np.asarray",
+          "np.max",
+          "np.where",
+          "np.zeros_like"
+        ],
+        "body_sha256": "27ad5dc40179decb1e59be2017202df3eb97acea1010f42ede34d923216f98bc",
+        "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+      },
+      "source_file": "010/source.py.txt"
+    },
+    {
+      "candidate_id": 11,
+      "wave": 2,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199023,
+      "island_id": 5,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "37cdfac90f901cc2f3ec93750dd2963981989c29badc1e221dfcb1f72064538a",
+      "finish_reason": "stop",
+      "generation_seconds": 2.372728199999983,
+      "usage": {
+        "prompt_tokens": 778,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 141,
+        "total_tokens": 919
+      },
+      "status": "static_rejected",
+      "failure_reason": "Only allowlisted direct numerical calls are supported",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    valid = residual >= 0\n    if not np.any(valid):\n        return np.zeros_like(bins)\n    r = np.where(valid, residual, 1.0)\n    r_safe = np.where(r > 0, r, 1.0)\n    fit = item / r_safe\n    waste = r_safe\n    score = -fit * waste\n    score = np.where(valid, score, -np.inf)\n    return score\n```",
+      "static": {
+        "status": "FAIL"
+      },
+      "source_file": "011/source.py.txt"
+    },
+    {
+      "candidate_id": 12,
+      "wave": 2,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199024,
+      "island_id": 4,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "dfabb4f3f3d8c78f69f630eadd5a32688ab35b225c62cac5a6f029a35974a0fc",
+      "finish_reason": "stop",
+      "generation_seconds": 2.5158240999990085,
+      "usage": {
+        "prompt_tokens": 778,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 149,
+        "total_tokens": 927
+      },
+      "status": "static_valid_pending_execution_approval",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    residual = np.where(residual >= 0, residual, 0.0)\n    max_residual = np.max(residual)\n    if max_residual <= 0:\n        return np.zeros_like(bins)\n    normalized = residual / max_residual\n    item_ratio = item / max_residual\n    score = normalized * (1.0 + 0.5 * item_ratio)\n    score = np.where(residual > 0, score, -1e10)\n    return score\n```",
+      "static": {
+        "policy": "phase3-numerical-ast-v2",
+        "status": "PASS",
+        "operations": [
+          "np.asarray",
+          "np.max",
+          "np.where",
+          "np.zeros_like"
+        ],
+        "body_sha256": "c3b80bb7adddbfc463f67514a808618e1f9438a016f9675ae0c0cbaeff86a681",
+        "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+      },
+      "source_file": "012/source.py.txt"
+    },
+    {
+      "candidate_id": 13,
+      "wave": 2,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199025,
+      "island_id": 7,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "410a1015bd3a639c5e65325ab25e89ae9259b69d09b811c56a41cb25a372200f",
+      "finish_reason": "stop",
+      "generation_seconds": 1.5304008000020985,
+      "usage": {
+        "prompt_tokens": 778,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 83,
+        "total_tokens": 861
+      },
+      "status": "static_valid_pending_execution_approval",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    fit = residual / np.maximum(bins, 1e-12)\n    waste = residual\n    score = -waste + 0.5 * fit\n    return score\n```",
+      "static": {
+        "policy": "phase3-numerical-ast-v2",
+        "status": "PASS",
+        "operations": [
+          "np.asarray",
+          "np.maximum"
+        ],
+        "body_sha256": "c04462ad80492dbeb0737ae00660000694288c5db2874287a5a7905da074889f",
+        "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+      },
+      "source_file": "013/source.py.txt"
+    },
+    {
+      "candidate_id": 14,
+      "wave": 2,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199026,
+      "island_id": 9,
+      "version_generated": 2,
+      "expected_name": "priority_v2",
+      "source_sha256": "fd19275a66d36fa879ae54614c80bca9e24d7c8353dda4b97228f33b0158996d",
+      "finish_reason": "stop",
+      "generation_seconds": 2.852304500000173,
+      "usage": {
+        "prompt_tokens": 1063,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 166,
+        "total_tokens": 1229
+      },
+      "status": "static_valid_pending_execution_approval",
+      "source": "```python\ndef priority_v2(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    residual = np.where(residual >= 0, residual, 0.0)\n    used = np.where(bins > 0, 1.0, 0.0)\n    waste = residual\n    waste_penalty = waste * (1.0 + 0.1 * used)\n    fit_score = -waste_penalty\n    diversity = np.where(residual > 0, 1.0 / (residual + 1e-09), 0.0)\n    score = fit_score + 0.5 * diversity\n    return score\n```",
+      "static": {
+        "policy": "phase3-numerical-ast-v2",
+        "status": "PASS",
+        "operations": [
+          "np.asarray",
+          "np.where"
+        ],
+        "body_sha256": "6fbc69b555692a5911ce0daf8a4f9cb6e0d03ac453660ac70ab72aeb37e19efb",
+        "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+      },
+      "source_file": "014/source.py.txt"
+    },
+    {
+      "candidate_id": 15,
+      "wave": 2,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199027,
+      "island_id": 9,
+      "version_generated": 2,
+      "expected_name": "priority_v2",
+      "source_sha256": "fd19275a66d36fa879ae54614c80bca9e24d7c8353dda4b97228f33b0158996d",
+      "finish_reason": "stop",
+      "generation_seconds": 2.586570199997368,
+      "usage": {
+        "prompt_tokens": 1063,
+        "prompt_tokens_details": {
+          "cached_tokens": 1059
+        },
+        "completion_tokens": 166,
+        "total_tokens": 1229
+      },
+      "status": "static_valid_pending_execution_approval",
+      "source": "```python\ndef priority_v2(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    residual = np.where(residual >= 0, residual, 0.0)\n    used = np.where(bins > 0, 1.0, 0.0)\n    waste = residual\n    waste_penalty = waste * (1.0 + 0.1 * used)\n    fit_score = -waste_penalty\n    diversity = np.where(residual > 0, 1.0 / (residual + 1e-09), 0.0)\n    score = fit_score + 0.5 * diversity\n    return score\n```",
+      "static": {
+        "policy": "phase3-numerical-ast-v2",
+        "status": "PASS",
+        "operations": [
+          "np.asarray",
+          "np.where"
+        ],
+        "body_sha256": "6fbc69b555692a5911ce0daf8a4f9cb6e0d03ac453660ac70ab72aeb37e19efb",
+        "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+      },
+      "source_file": "015/source.py.txt"
+    },
+    {
+      "candidate_id": 16,
+      "wave": 2,
+      "origin": "ollama",
+      "model": "qwen3.8:27b-q4_K_M",
+      "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "quantization": "Q4_K_M",
+      "sampling_seed": 549199028,
+      "island_id": 1,
+      "version_generated": 1,
+      "expected_name": "priority_v1",
+      "source_sha256": "f9169881de10cc483dc36f08944390624ce7c9b203f05285c4ee3dcdc3bef0b1",
+      "finish_reason": "stop",
+      "generation_seconds": 2.778103100001317,
+      "usage": {
+        "prompt_tokens": 778,
+        "prompt_tokens_details": {
+          "cached_tokens": 39
+        },
+        "completion_tokens": 159,
+        "total_tokens": 937
+      },
+      "status": "static_valid_pending_execution_approval",
+      "source": "```python\ndef priority_v1(item: float, bins: np.ndarray) -> np.ndarray:\n    bins = np.asarray(bins, dtype=float)\n    residual = bins - item\n    residual = np.where(residual >= 0, residual, 0.0)\n    residual = np.where(residual > 0, residual, 1e-12)\n    ratio = item / residual\n    ratio = np.where(ratio > 0, ratio, 1e-12)\n    log_ratio = np.log(ratio)\n    penalty = np.where(residual < item * 0.5, 1.0, 0.0)\n    score = -log_ratio - penalty\n    return score\n```",
+      "static": {
+        "policy": "phase3-numerical-ast-v2",
+        "status": "PASS",
+        "operations": [
+          "np.asarray",
+          "np.log",
+          "np.where"
+        ],
+        "body_sha256": "9d45e81ed99651be6ca1cf4d1916ecf7c58cc5fc07203d2d049eac4060bfad32",
+        "risk": "bounded numerical source; allocation/CPU/numerical and Docker residual risks remain"
+      },
+      "source_file": "016/source.py.txt"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": "fresh-candidate-fused-v1",
+  "request_revision": "fused-followup-v1-recovery-1.2",
+  "controller_version": "fused-controller-v1.2",
+  "checkpoint_ownership_version": "checkpoint-owned-json-v2",
+  "maximum_container_dispatches": 45,
+  "maximum_full_evaluations": 41,
+  "maximum_fingerprint_invocations": 25,
+  "maximum_wall_seconds_per_task": 10,
+  "mode_orders": [
+    [
+      "exact",
+      "fused16"
+    ],
+    [
+      "fused16",
+      "exact"
+    ]
+  ],
+  "parallelism": 1,
+  "automatic_retries": 0,
+  "isolation_policy_sha256": "003b837370df76d259c0fba0c56837050bb135b980d9e2f6c7c416405b6981db",
+  "static_policy_sha256": "a544367cc0aeb105dbce78017f4dc4040d686e86cc91006f4ef93439f36cea71",
+  "execution_authorized": false,
+  "not_an_executable_manifest": true,
+  "private_manifest_sha256": "4ba1da14bcdd1692ecf068bb41e30c7e3b701c03ad3f1e6c93d5b9243d323a7a",
+  "development_dataset_sha256": "a9709f23f17aaf0e083a989e1b5ccf53ac91221987128d5480ff1093f594c401",
+  "boundary_state_bank_sha256": "cb987d6710d87b3926ddf6d181a9bae83507bea14ff39e59d5967dd9484ef201",
+  "publication_note": "No grants/dispatch state/raw inputs/images are supplied. Local runtime/image validation and a fresh finite approval are mandatory."
+}

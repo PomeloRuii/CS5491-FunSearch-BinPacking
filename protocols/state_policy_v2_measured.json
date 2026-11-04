@@ -1,0 +1,123 @@
+{
+  "schema": "public-state-policy-v2-method-metadata",
+  "private_manifest_sha256": "665043f41d3ac5cd12d8ee6ef82caff49d5f228194a93cfda16e9028051499c3",
+  "settings": [
+    {
+      "name": "exact_c1",
+      "bank": null,
+      "size": 0,
+      "cache": "C1",
+      "fallback": "F0"
+    },
+    {
+      "name": "s0_n16_c1_f1",
+      "bank": "S0",
+      "size": 16,
+      "cache": "C1",
+      "fallback": "F1"
+    },
+    {
+      "name": "s0_n64_c1_f1",
+      "bank": "S0",
+      "size": 64,
+      "cache": "C1",
+      "fallback": "F1"
+    },
+    {
+      "name": "s0_n128_c1_f1",
+      "bank": "S0",
+      "size": 128,
+      "cache": "C1",
+      "fallback": "F1"
+    },
+    {
+      "name": "s2_n16_c1_f1",
+      "bank": "S2",
+      "size": 16,
+      "cache": "C1",
+      "fallback": "F1"
+    },
+    {
+      "name": "s2_n64_c1_f1",
+      "bank": "S2",
+      "size": 64,
+      "cache": "C1",
+      "fallback": "F1"
+    },
+    {
+      "name": "s2_n128_c1_f1",
+      "bank": "S2",
+      "size": 128,
+      "cache": "C1",
+      "fallback": "F1"
+    },
+    {
+      "name": "bridge_s0_n16_c0_f0",
+      "bank": "S0",
+      "size": 16,
+      "cache": "C0",
+      "fallback": "F0"
+    }
+  ],
+  "mode_orders": [
+    [
+      "exact_c1",
+      "s0_n64_c1_f1",
+      "s0_n16_c1_f1",
+      "s2_n16_c1_f1",
+      "s0_n128_c1_f1",
+      "s2_n128_c1_f1",
+      "bridge_s0_n16_c0_f0",
+      "s2_n64_c1_f1"
+    ],
+    [
+      "s2_n64_c1_f1",
+      "bridge_s0_n16_c0_f0",
+      "s2_n128_c1_f1",
+      "s0_n128_c1_f1",
+      "s2_n16_c1_f1",
+      "s0_n16_c1_f1",
+      "s0_n64_c1_f1",
+      "exact_c1"
+    ],
+    [
+      "s0_n128_c1_f1",
+      "s2_n128_c1_f1",
+      "bridge_s0_n16_c0_f0",
+      "s2_n64_c1_f1",
+      "exact_c1",
+      "s0_n64_c1_f1",
+      "s0_n16_c1_f1",
+      "s2_n16_c1_f1"
+    ]
+  ],
+  "images": [
+    "sha256:8aba27be22d71ed8cd2b29402161971d3de0a9a62beed2926733277782706ea5",
+    "sha256:a5dd029d1ff8eeae845fa5c45690f0d87e6b1b0774d8828fc13bc500c4e39f0e",
+    "sha256:bd3f7a6ad3114919ba7e3d510a16ca0de71d1f3127bfee4364276e64280ce1e6",
+    "sha256:f9fe47924d2efd767258024fe7d15bb6b39c771fbcb68f518c4207b0ec560605"
+  ],
+  "development_canonical_sha256": "a9709f23f17aaf0e083a989e1b5ccf53ac91221987128d5480ff1093f594c401",
+  "state_bank_hashes": {
+    "S2": {
+      "sha256": "c88e62ca7e8d0f558f4af5f31ad3fbd2f8c2710b735cfa34bb69ae62f39e964b",
+      "canonical_sha256": "f3772d53d6e54907b77bb90e99761d48d31e10d569edb4fbdacaf62ec34af874"
+    },
+    "validation": {
+      "sha256": "be3672ada6c40e10e2826f43781c6b0b636c11abe65b02558b9df97b91277712",
+      "canonical_sha256": "ecb5259c5f398508bdc486f6f8f919eee9a84143939822feec5aca7fabe4ff4d"
+    }
+  },
+  "raw_values_included": false,
+  "execution_authorized": false,
+  "source_files": {
+    "freeze.py": "6b7bf57cd18191d467b35e8b78b67187305631c6fba8307c9eb473432d237bb0",
+    "replay.py": "e364e7a2c5c52fc96f58a54508f699f67c665304de3c795084b3653b56707066",
+    "settings.py": "05221fd354985106a2f1b3e1dff58887591881d25417462d99303fbcf8a17897",
+    "states.py": "03a9c6158e203ca433d4a64ee3a5caf98f40fa725e3dfe71d848988106f5693e",
+    "terminal_index.py": "70798f8bf5024a6dbae26dbcf1f647905e0add582f7827797834f71f294081ae",
+    "worker_v2.py": "6584adeb4b1c25fce71deb3e7a23ab8454ba0c595d66a7625d53cc4e384267f4",
+    "__init__.py": "5c0ac55247fc320626fe4cb825a6c688c7524691838996daef58c0bbe9763730"
+  },
+  "fresh_machine_runtime_validated": false
+}

@@ -1,0 +1,185 @@
+{
+  "schema": "bounded-development-followup-proposal-v1",
+  "approved": false,
+  "execution_authorized": false,
+  "not_an_executable_authorization_manifest": true,
+  "version": "post-publication-v1",
+  "new_generation_requests": 0,
+  "main_generation_requests": 0,
+  "model": "qwen3.8:27b-q4_K_M",
+  "prior_public_commit": "bbc1855fd75c34633098224eb620eedea7a7c9eb",
+  "candidate_ids_in_stream": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "static_valid_sources": [
+    {
+      "candidate_id": 2,
+      "source_sha256": "7134640a217ccb5977494c4b723a02e243b979b70675faf49b0ef821eb4d7a23",
+      "expected_name": "priority_v1"
+    },
+    {
+      "candidate_id": 3,
+      "source_sha256": "507343e9dd331b4af5ea386c634bea5bc20af5e2f840004b7b46ad24ef049a92",
+      "expected_name": "priority_v1"
+    },
+    {
+      "candidate_id": 5,
+      "source_sha256": "9e178dfacb0c8d17308c4e5757a79d69fb51e076ea44a6ed7cc2bd2fb443e212",
+      "expected_name": "priority_v1"
+    },
+    {
+      "candidate_id": 8,
+      "source_sha256": "ea0f7ec5f03d783146e1525c8fc09569bbe19676ece402da6a1560683a677a4a",
+      "expected_name": "priority_v1"
+    },
+    {
+      "candidate_id": 10,
+      "source_sha256": "a818663861cc8aa682c356e4a8f9d7cd9c3de03d7c2c8a371dcdf570ad8ea5ce",
+      "expected_name": "priority_v1"
+    },
+    {
+      "candidate_id": 12,
+      "source_sha256": "dfabb4f3f3d8c78f69f630eadd5a32688ab35b225c62cac5a6f029a35974a0fc",
+      "expected_name": "priority_v1"
+    },
+    {
+      "candidate_id": 13,
+      "source_sha256": "410a1015bd3a639c5e65325ab25e89ae9259b69d09b811c56a41cb25a372200f",
+      "expected_name": "priority_v1"
+    },
+    {
+      "candidate_id": 14,
+      "source_sha256": "fd19275a66d36fa879ae54614c80bca9e24d7c8353dda4b97228f33b0158996d",
+      "expected_name": "priority_v2"
+    },
+    {
+      "candidate_id": 15,
+      "source_sha256": "fd19275a66d36fa879ae54614c80bca9e24d7c8353dda4b97228f33b0158996d",
+      "expected_name": "priority_v2"
+    },
+    {
+      "candidate_id": 16,
+      "source_sha256": "f9169881de10cc483dc36f08944390624ce7c9b203f05285c4ee3dcdc3bef0b1",
+      "expected_name": "priority_v1"
+    }
+  ],
+  "frozen_stream_sha256": "f28769d5f6cdbceef7c68c610d271b3cf979d36d3a7b9a856d356372c5dd286f",
+  "development_dataset_sha256": "a9709f23f17aaf0e083a989e1b5ccf53ac91221987128d5480ff1093f594c401",
+  "original_fingerprint_bank_sha256": "d69fc118d9ab4a464a47885f17e44a0b7dcc92072515d837518db795c0d35cf5",
+  "original_comparison_checkpoint_sha256": "6c2cda71aee1f2a1764318903cd3134ef8a7dc366b9a232629623d3c951e6905",
+  "architecture_A": {
+    "version": "fresh-candidate-fused-v1",
+    "settings": [
+      "exact",
+      "behavioral-fused-16"
+    ],
+    "timing_orders": [
+      [
+        "exact",
+        "behavioral-fused-16"
+      ],
+      [
+        "behavioral-fused-16",
+        "exact"
+      ]
+    ],
+    "normal_model_container_maximum": 40,
+    "same_old_fingerprint_states": true,
+    "independent_fresh_database_and_empty_cache_per_arm": true,
+    "source5_failure_behavior": "Preserve v1 for architecture-only comparison; do not mix proposed state-policy v2 fail-open behavior.",
+    "development_image": "sha256:a33f8214653b7d5368f622a860de848c20c77864db93ec9d5227373ebe2a405d",
+    "worker_process_state_across_candidates": "NEVER reused",
+    "within_candidate_full_namespace": "Fresh namespace after fingerprint",
+    "current_model_fused_gate": "Still closed; new finite fused authority/version required",
+    "fitness_reference_check": "Post-hoc Exact-arm actual receipts only; no cross-arm score/cache import into normal trajectories and not counted as independent new audit."
+  },
+  "diagnostic_B": {
+    "version": "development-boundary-regression-v1",
+    "model_candidate_ids": [
+      8,
+      10
+    ],
+    "new_model_container_maximum": 2,
+    "action": "fingerprint only",
+    "states": 6,
+    "state_bank_sha256": "cb987d6710d87b3926ddf6d181a9bae83507bea14ff39e59d5967dd9484ef201",
+    "new_image_id": null,
+    "required_image_policy": "Only required development-derived challenge states, same reviewed runtime and restrictions; no heldout/reserved values. Pin and validate before dispatch.",
+    "constructed_after_known_failure": true,
+    "not_independent_validation_set": true
+  },
+  "trusted_checks": {
+    "container_maximum": 3,
+    "jobs": [
+      "fused nonmatch performs complete evaluation",
+      "fused match skips evaluation",
+      "challenge-bank validity/expected trusted decisions"
+    ],
+    "research_samples": false,
+    "must_pass_before_model_tasks": true
+  },
+  "limits": {
+    "total_containers": 45,
+    "model_containers": 42,
+    "trusted_containers": 3,
+    "potential_full_evaluations": 41,
+    "potential_fingerprint_invocations": 25,
+    "external_wall_limit_seconds_per_task": 10,
+    "parallel_jobs": 1,
+    "network": "none",
+    "user": "65532:65532",
+    "readonly_root": true,
+    "host_mounts": false,
+    "privileged": false,
+    "cpu": 1,
+    "memory_bytes": 536870912,
+    "pid_limit": 64,
+    "tmpfs_bytes": 16777216,
+    "automatic_retry": false
+  },
+  "unresolved_prerequisites": [
+    "Apply/version minimal development-only host reference import correction; legacy and heldout file access must fail closed in import test.",
+    "Implement/review source-bound fused controller/authority without weakening default old gates; bind source hashes.",
+    "Build and pin narrowly scoped boundary image and verify equivalent restrictions/data identity.",
+    "Issue ONE final consolidated execution manifest with exact code/image/data seals and obtain explicit user authorization."
+  ],
+  "state_policy_v2": {
+    "implemented": false,
+    "fingerprint_sizes": [
+      16,
+      64,
+      128
+    ],
+    "strata": [
+      "FF/BF disagreements",
+      "reference Worst-Fit prefixes",
+      "large/boundary arrivals",
+      "exact-fit/first-maximum ties"
+    ],
+    "per_family_per_stratum_quota": {
+      "16": 2,
+      "64": 8,
+      "128": 16
+    },
+    "nested_prefix_rule": "Seeded deterministic round-robin over two families and four strata; do not change original partition.",
+    "guard_failure_policy": "Future separately versioned method: unfingerprintable/failing coverage means no skip; full-evaluation acceptance/registration remains common and fallback is separately budgeted.",
+    "not_in_architecture_A_or_diagnostic_B": true,
+    "independent_validation": "Predeclare separate development-side validation before evaluation; existing reserved bank is audit evidence only, never probe tuning; final heldout never read."
+  },
+  "status": "PROPOSED_ONLY; no new model execution or Docker work authorized by this file"
+}
