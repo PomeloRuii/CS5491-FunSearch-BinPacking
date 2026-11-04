@@ -6,7 +6,7 @@ import numpy as np
 
 import phase2_bootstrap
 from phase2_bootstrap import ROOT
-from trusted_cases import bin_packing_utils, content_hash
+from development_data_v1 import canonical_hash as content_hash
 
 PARTITION_SEED=5491
 STATE_SEED=5492
@@ -53,10 +53,13 @@ def collect(groups,seed,maximum_per_family):
     return states,{family:{"eligible_seen":x["eligible_seen"],"selected":len(x["states"])} for family,x in output.items()}
 
 
-def build():
+def build(source_json):
+    # Historical partition reconstruction is an explicit, separately scoped
+    # operation. Normal imports never load the legacy literals or L1 bounds.
+    datasets = json.loads(Path(source_json).read_text(encoding='utf-8'))
     destination=ROOT/"data";destination.mkdir(parents=True,exist_ok=True)
     sets={k:{} for k in ("development","audit","heldout")};ids={}
-    for family,data in bin_packing_utils.datasets.items():
+    for family,data in datasets.items():
         names=sorted(data)
         rng=np.random.default_rng(PARTITION_SEED+(0 if family=="OR3" else 1));rng.shuffle(names)
         ndev,naudit=(12,4) if family=="OR3" else (3,1)
@@ -73,7 +76,7 @@ def build():
     dump(destination/"heldout.json",sets["heldout"])
     dump(destination/"states.json",state_bank)
     manifest={"partition_seed":PARTITION_SEED,"state_seed":STATE_SEED,
-              "source_dataset_hashes":{k:content_hash(v) for k,v in bin_packing_utils.datasets.items()},
+              "source_dataset_hashes":{k:content_hash(v) for k,v in datasets.items()},
               "instance_ids":ids,"partition_hashes":{k:content_hash(v) for k,v in sets.items()},
               "fingerprint_sizes":[16,64,128],"fingerprint_state_ids":[s["state_id"] for s in fingerprint],
               "audit_state_ids":[s["state_id"] for s in audit],"fingerprint_selection":fp_stats,
@@ -89,4 +92,8 @@ def build():
                       "state_bank_sha256":manifest["state_bank_sha256"]},indent=2))
 
 
-if __name__=="__main__":build()
+if __name__=="__main__":
+    import argparse
+    parser=argparse.ArgumentParser(description='Historical rebuild only; requires separately authorized source data')
+    parser.add_argument('--source-json',type=Path,required=True)
+    build(parser.parse_args().source_json)

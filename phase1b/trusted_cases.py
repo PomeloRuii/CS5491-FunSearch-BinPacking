@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "reference"))
 
 from implementation import code_manipulation as cm
-import bin_packing_utils
+from development_data_v1 import load_development, CONTRACT as HOST_DATA_CONTRACT
 
 SPECIFICATION = (ROOT / "reference/specification.txt").read_text(encoding="utf-8")
 _template = cm.text_to_program(SPECIFICATION)
@@ -21,7 +21,9 @@ BODIES = {
     "timeout": "    import time\n    time.sleep(5)\n    return -bins",
 }
 TOY = {"toy": {"capacity": 10, "num_items": 4, "items": [6, 7, 3, 4]}}
-GROUPS = {"toy": TOY, "OR3": bin_packing_utils.datasets["OR3"]}
+# Prospective host-development-only-v1. Historical whole-OR3 fixtures/results
+# remain historical; their old execution grants must not validate this helper.
+GROUPS = {"toy": TOY, "OR3": load_development()["OR3"]}
 
 
 def content_hash(value):

@@ -1,12 +1,15 @@
 """JSON checkpoint of actual upstream islands, clusters and RNG; never pickle."""
 import random
 import time
+import copy
 import numpy as np
 import bootstrap3
 from common import digest
 from implementation import code_manipulation as cm, config
 from implementation.programs_database import ProgramsDatabase, Cluster
 from trusted_cases import SPECIFICATION
+
+OWNERSHIP_VERSION = 'checkpoint-owned-json-v2'
 
 def snapshot(database):
     state=np.random.get_state()
@@ -25,9 +28,14 @@ def snapshot(database):
         'reset_age_seconds':max(0,time.time()-database._last_reset_time),
         'numpy_rng':[state[0],state[1].tolist(),state[2],state[3],state[4]],
         'python_rng':random.getstate(), 'proposal_fitness_unchanged':True}
-    return value
+    # Exported best-score lists/nested per-test dictionaries must not provide a
+    # mutable back door into the live database either.
+    return copy.deepcopy(value)
 
 def restore(value):
+    # One ownership boundary covers lengths, best scores, nested per-test score
+    # dictionaries, config and RNG containers. Values/order/semantics unchanged.
+    value=copy.deepcopy(value)
     if value['schema']!='upstream-islands-json-v1':raise ValueError('Unknown checkpoint schema')
     database=ProgramsDatabase(config.ProgramsDatabaseConfig(**value['config']),cm.text_to_program(SPECIFICATION),'priority')
     if len(value['islands'])!=len(database._islands):raise ValueError('Island count changed')
