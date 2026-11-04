@@ -1,0 +1,17 @@
+candidate_id,exact_status,fused16_status,exact_island,fused16_island,prompt_differs,best_fitness_differs
+1,static_rejected,static_rejected,2,2,False,False
+2,evaluated,evaluated,9,9,False,False
+3,evaluated,skipped_behavioral,4,4,False,False
+4,static_rejected,static_rejected,1,1,False,False
+5,runtime_rejected,runtime_rejected,1,1,False,False
+6,static_rejected,static_rejected,9,9,False,False
+7,static_rejected,static_rejected,6,6,False,False
+8,evaluated,evaluated,5,5,False,False
+9,static_rejected,static_rejected,6,6,False,False
+10,evaluated,skipped_behavioral,0,0,False,False
+11,static_rejected,static_rejected,5,5,False,False
+12,evaluated,skipped_behavioral,4,4,True,False
+13,evaluated,skipped_behavioral,3,7,True,False
+14,evaluated,skipped_behavioral,8,9,True,False
+15,skipped_exact,skipped_behavioral,9,9,False,False
+16,evaluated,skipped_behavioral,1,1,False,False

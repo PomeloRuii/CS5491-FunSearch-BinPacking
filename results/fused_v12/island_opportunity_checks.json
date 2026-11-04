@@ -1,0 +1,131 @@
+{
+  "interpretation": "Post-hoc opportunity check using concurrent Exact fitness; never inserted into Fused histories; not a measured counterfactual evolutionary trajectory.",
+  "rows": [
+    {
+      "block": 1,
+      "candidate_id": 3,
+      "fused_island": 4,
+      "island_best_before": -2750.0,
+      "concurrent_exact_score": -1142.5416666666665,
+      "would_improve_selected_island": true,
+      "would_improve_global": false
+    },
+    {
+      "block": 1,
+      "candidate_id": 10,
+      "fused_island": 0,
+      "island_best_before": -2047.125,
+      "concurrent_exact_score": -2649.4583333333335,
+      "would_improve_selected_island": false,
+      "would_improve_global": false
+    },
+    {
+      "block": 1,
+      "candidate_id": 12,
+      "fused_island": 4,
+      "island_best_before": -2750.0,
+      "concurrent_exact_score": -2750.0,
+      "would_improve_selected_island": false,
+      "would_improve_global": false
+    },
+    {
+      "block": 1,
+      "candidate_id": 13,
+      "fused_island": 7,
+      "island_best_before": -2750.0,
+      "concurrent_exact_score": -1142.5416666666665,
+      "would_improve_selected_island": true,
+      "would_improve_global": false
+    },
+    {
+      "block": 1,
+      "candidate_id": 14,
+      "fused_island": 9,
+      "island_best_before": -1142.5416666666665,
+      "concurrent_exact_score": -1142.5416666666665,
+      "would_improve_selected_island": false,
+      "would_improve_global": false
+    },
+    {
+      "block": 1,
+      "candidate_id": 15,
+      "fused_island": 9,
+      "island_best_before": -1142.5416666666665,
+      "concurrent_exact_score": -1142.5416666666665,
+      "would_improve_selected_island": false,
+      "would_improve_global": false
+    },
+    {
+      "block": 1,
+      "candidate_id": 16,
+      "fused_island": 1,
+      "island_best_before": -2750.0,
+      "concurrent_exact_score": -2750.0,
+      "would_improve_selected_island": false,
+      "would_improve_global": false
+    },
+    {
+      "block": 2,
+      "candidate_id": 3,
+      "fused_island": 4,
+      "island_best_before": -2750.0,
+      "concurrent_exact_score": -1142.5416666666665,
+      "would_improve_selected_island": true,
+      "would_improve_global": false
+    },
+    {
+      "block": 2,
+      "candidate_id": 10,
+      "fused_island": 0,
+      "island_best_before": -2047.125,
+      "concurrent_exact_score": -2649.4583333333335,
+      "would_improve_selected_island": false,
+      "would_improve_global": false
+    },
+    {
+      "block": 2,
+      "candidate_id": 12,
+      "fused_island": 4,
+      "island_best_before": -2750.0,
+      "concurrent_exact_score": -2750.0,
+      "would_improve_selected_island": false,
+      "would_improve_global": false
+    },
+    {
+      "block": 2,
+      "candidate_id": 13,
+      "fused_island": 7,
+      "island_best_before": -2750.0,
+      "concurrent_exact_score": -1142.5416666666665,
+      "would_improve_selected_island": true,
+      "would_improve_global": false
+    },
+    {
+      "block": 2,
+      "candidate_id": 14,
+      "fused_island": 9,
+      "island_best_before": -1142.5416666666665,
+      "concurrent_exact_score": -1142.5416666666665,
+      "would_improve_selected_island": false,
+      "would_improve_global": false
+    },
+    {
+      "block": 2,
+      "candidate_id": 15,
+      "fused_island": 9,
+      "island_best_before": -1142.5416666666665,
+      "concurrent_exact_score": -1142.5416666666665,
+      "would_improve_selected_island": false,
+      "would_improve_global": false
+    },
+    {
+      "block": 2,
+      "candidate_id": 16,
+      "fused_island": 1,
+      "island_best_before": -2750.0,
+      "concurrent_exact_score": -2750.0,
+      "would_improve_selected_island": false,
+      "would_improve_global": false
+    }
+  ]
+}

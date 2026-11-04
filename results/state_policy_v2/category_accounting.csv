@@ -1,0 +1,5 @@
+role,containers,full_attempted,full_completed,fp_invocations,fp_completed,lifecycle_seconds,cleanup_verified
+normal,219,96,75,192,171,318.06453150001835,True
+trusted,6,5,4,3,2,12.311767799998051,True
+audit_full,8,8,8,0,0,13.921814500001346,True
+validation_vector,8,0,0,8,8,11.049249499996222,True

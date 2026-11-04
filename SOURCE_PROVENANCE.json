@@ -6,5 +6,13 @@
   "original_sealed_execution_manifest_sha256": "5f15c043c21bd9afe5ae7b871e9ee2c7dd986d0b32de41618f742d59b8508eb9",
   "original_frozen_stream_sha256": "f28769d5f6cdbceef7c68c610d271b3cf979d36d3a7b9a856d356372c5dd286f",
   "publication_projections_are_not_original_receipts": true,
-  "private_approvals_and_history_included": false
+  "private_approvals_and_history_included": false,
+  "fused_v12_private_manifest_sha256": "4ba1da14bcdd1692ecf068bb41e30c7e3b701c03ad3f1e6c93d5b9243d323a7a",
+  "fused_protocol_projection": "Only pool/checkpoint/boundary paths remapped to public or local_data artifacts; not independently runtime-validated",
+  "measured_exact_cache": "Fully evaluated representatives only; behavioral skips do not populate the source cache",
+  "post_success_documents": "Historical design retained; separately versioned S2/C1/F1 implementation and actual completed results added.",
+  "scientific_results_modified": false,
+  "state_policy_v2_private_manifest_sha256": "665043f41d3ac5cd12d8ee6ef82caff49d5f228194a93cfda16e9028051499c3",
+  "state_policy_v2_source_projection": "Seven method files byte-identical to validated private source; raw data/banks, private orchestration state and execution receipts withheld; fresh-machine runtime not validated.",
+  "state_policy_v2_audit_projection": "Scalar outcomes retained; private dispatch slot locators omitted."
 }

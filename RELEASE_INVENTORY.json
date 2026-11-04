@@ -2,7 +2,7 @@
   "schema": "clean-incremental-research-release-v4",
   "target_repository": "https://github.com/PomeloRuii/CS5491-FunSearch-BinPacking.git",
   "original_public_commit": "bbc1855fd75c34633098224eb620eedea7a7c9eb",
-  "parent_public_commit": "6d67c83dff181f0dd5d472c43000793272e56b6d",
+  "parent_public_commit": "9e7fe317784e445bcb8da2b60af5a7d9a76f1d49",
   "files": [
     {
       "path": ".gitattributes",
@@ -16,8 +16,8 @@
     },
     {
       "path": "DATA_AND_SECURITY.md",
-      "bytes": 3347,
-      "sha256": "503290ccb9b9b890f4fc19da3998c58198a321c22b4fbf98ada118fbd1af80bb"
+      "bytes": 4108,
+      "sha256": "dd86798df155ed23a115e91ea2c99c27233c6ddcc4a5c87224d2996f3f5f9b4c"
     },
     {
       "path": "LICENSE",
@@ -26,8 +26,8 @@
     },
     {
       "path": "METHOD.md",
-      "bytes": 3990,
-      "sha256": "18238973d2805fb5e579c7df9d7d47f25979a9d38b061d16d8e89cfa9de8be9e"
+      "bytes": 7149,
+      "sha256": "96045c68cca4b40f31cd6c75ccdcdeb7dcbce5a928be05c68ec5e31bfadea419"
     },
     {
       "path": "NOTICE",
@@ -36,13 +36,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5003,
-      "sha256": "0b2a58e1cd01ea07c58257499ce69c82bdae705df2fabe62920eb08ad15f79c5"
+      "bytes": 6707,
+      "sha256": "e0ef2b42c7eca439bec642f6609d3ca1b5c64e5a7ae0e9faf675ccc4f28e56d0"
     },
     {
       "path": "SOURCE_PROVENANCE.json",
-      "bytes": 580,
-      "sha256": "85d813696f61d537adb1593fa9e826483f84f3e76c6827392e1a8e9722536242"
+      "bytes": 1573,
+      "sha256": "28a937283dfc9d0ab66d2731ec9e45ab7efac2c7a09ff6c3543061063f9601f1"
     },
     {
       "path": "candidates/001/request_payload.json",
@@ -298,6 +298,46 @@
       "path": "data/DATA_REQUIREMENTS.json",
       "bytes": 882,
       "sha256": "8562bbb3c91137e6f30c62a3b6728224b4fe9f7fcc3be74fd6e550910639b986"
+    },
+    {
+      "path": "docs/FILTER_ORDER_AUDIT.md",
+      "bytes": 4889,
+      "sha256": "ca5aa8d3f24b0a56b08e073a8b5c2f407465a4819c0ea8e7e417fed5071c3d2f"
+    },
+    {
+      "path": "docs/FUSED_V12_MEASURED_RESULTS.md",
+      "bytes": 12201,
+      "sha256": "de68b62f928968e2a90ce135f4231f110ea132d027b2ea44b8188ec821794fb1"
+    },
+    {
+      "path": "docs/FUSED_V12_REPRODUCTION.md",
+      "bytes": 1961,
+      "sha256": "ab782c82fa7bfccab40acb37fe1c322b73340454c422b3107f05489fcdb4912a"
+    },
+    {
+      "path": "docs/MILESTONE_2026-11-19.md",
+      "bytes": 7385,
+      "sha256": "7e4e23fe46ecd41fded2084693c0bac4e176b24c00151a2ab2a106e2b9ed3c39"
+    },
+    {
+      "path": "docs/NEXT_STATE_POLICY_V2.md",
+      "bytes": 10746,
+      "sha256": "864d7acff097bd8103daf711f2ef4b69077629b4069d638c4e3dab3f8274615f"
+    },
+    {
+      "path": "docs/POST_PUBLICATION_FINDINGS_V1.md",
+      "bytes": 4114,
+      "sha256": "4dc47d1634d80b2529a6dac2c914a8fa296781ed127b80e5c5ddf5ae3a935383"
+    },
+    {
+      "path": "docs/PROJECT_GUIDE.md",
+      "bytes": 4483,
+      "sha256": "cb46e409b21054cfdd05af3c62b1564d349dc233ed6a2be3abd916b1679a38b1"
+    },
+    {
+      "path": "docs/STATE_POLICY_V2_RESULTS.md",
+      "bytes": 14664,
+      "sha256": "dd0fa47ea0c90a780fb2ae9803a60923aec25a6246f7474aae1f1791fee32756"
     },
     {
       "path": "environment.yml",
@@ -995,14 +1035,129 @@
       "sha256": "3ec0f0abecc1993f1c312b7a3bedd23da40087bcac87c06cd82ff879b00ba297"
     },
     {
+      "path": "results/fused_v12/arm_measurements.csv",
+      "bytes": 3707,
+      "sha256": "3c6326a05ceff6fc0aa141da4d457ddeed87c8e87b416ce7194720647f9ad634"
+    },
+    {
+      "path": "results/fused_v12/boundary_decisions.csv",
+      "bytes": 1011,
+      "sha256": "f32e0834eb90d5dad72ae2bd8fb7de7306ec93fcc2f4efdc6224fa2e90643710"
+    },
+    {
+      "path": "results/fused_v12/candidate_outcomes.csv",
+      "bytes": 6522,
+      "sha256": "bfaae4f2d24d42d584b7c87c01619e231758461b2001e00c37f0e0b528baab44"
+    },
+    {
+      "path": "results/fused_v12/filter_order_evidence.csv",
+      "bytes": 1484,
+      "sha256": "0a4da5ae1bf0e17838cecb1a109d584cc7442e110bd8e52d999aebd2dbf47db2"
+    },
+    {
+      "path": "results/fused_v12/island_opportunity_checks.json",
+      "bytes": 3878,
+      "sha256": "8bbb4cc2e4650816cd17770e91cfbef5c62f1a72b06f13eca51e601e33daa0aa"
+    },
+    {
+      "path": "results/fused_v12/paired_comparison.csv",
+      "bytes": 268,
+      "sha256": "38d4bedbec3a580474238514793341b8befb15d57f08cba70bea59e91fcb9ffa"
+    },
+    {
+      "path": "results/fused_v12/quality_checks.csv",
+      "bytes": 994,
+      "sha256": "75e908531cb59e3b847c2fcbff4c01fc1e7588caecf7b501b55d52a7045631a0"
+    },
+    {
+      "path": "results/fused_v12/summary.json",
+      "bytes": 6817,
+      "sha256": "b93b0687dd18881d59892d322e7b1b05ab1bfc8791b5a938af085980b4483286"
+    },
+    {
+      "path": "results/fused_v12/trajectory_differences.csv",
+      "bytes": 887,
+      "sha256": "8f562ab3e2b1ba42385e4e32b245ba2d4d737d0b5e153972c305719413a8b8da"
+    },
+    {
       "path": "results/generation_and_learning_costs.json",
       "bytes": 1120,
       "sha256": "6fdbca1198a7bd7ba35e55464336d3ca67c57fa0358ab55b3f3c1f6efafbf3ff"
     },
     {
+      "path": "results/post_publication_v1/cost_model.csv",
+      "bytes": 814,
+      "sha256": "3528e2701f74f7721f0036ebc9e0cdd0f4286a5fda5e423a2ab1e12776a80ab6"
+    },
+    {
+      "path": "results/post_publication_v1/development_coverage.csv",
+      "bytes": 577,
+      "sha256": "20d657b65cb6beedff9540c3f9cc325e988d6233a319b5c8f873c3af6226bb4a"
+    },
+    {
+      "path": "results/post_publication_v1/findings.json",
+      "bytes": 5349,
+      "sha256": "1195c4563356472fdcf01af12dd832970f949e9e98e38ee60226712066377eb1"
+    },
+    {
       "path": "results/research_results.json",
       "bytes": 11233,
       "sha256": "4032520a48202f035fe5ecab85aaa4ce1cb59d5922c9ca2a05a70e4999547c8b"
+    },
+    {
+      "path": "results/state_policy_v2/arm_measurements.csv",
+      "bytes": 17336,
+      "sha256": "24dae847651b7a5cb9c6db5f2f88817df9c46702a02a4abde349146d5799a076"
+    },
+    {
+      "path": "results/state_policy_v2/audit_findings.csv",
+      "bytes": 45746,
+      "sha256": "54beaefee5bb589660934ac487d35410517e7c54b9eeace5f5b9b247f3a28890"
+    },
+    {
+      "path": "results/state_policy_v2/category_accounting.csv",
+      "bytes": 297,
+      "sha256": "6aed845984e29a9c68d29870812583ae242e2fe906e6d7a82d253ba0da7bcbdf"
+    },
+    {
+      "path": "results/state_policy_v2/comparison_summary.csv",
+      "bytes": 10026,
+      "sha256": "f66ce82f3a45d99978f26d24972cea71d3b272d67a03973af0aecfa4c8cb6c60"
+    },
+    {
+      "path": "results/state_policy_v2/paired_differences.csv",
+      "bytes": 4336,
+      "sha256": "a8f38a6151e89d68da0dddf66dcd66659c8f53b05edf7841c8b46f2b4f540698"
+    },
+    {
+      "path": "results/state_policy_v2/program_fitness.csv",
+      "bytes": 3999,
+      "sha256": "56e7aad64afd4709d998fd51f1c3f903218ad18907f713332ad26ae43c4567b9"
+    },
+    {
+      "path": "results/state_policy_v2/s2_s0_database_differences.json",
+      "bytes": 1914,
+      "sha256": "9646aed96665dc1f68191bc1f92b20b4bdfac40caaf3515e6b2b377d245ea9fb"
+    },
+    {
+      "path": "results/state_policy_v2/s2_s0_trajectory_comparison.csv",
+      "bytes": 4672,
+      "sha256": "ebe690573fdb695e5a306978d9f93116f581b22368838ab9da2351e43a55d313"
+    },
+    {
+      "path": "results/state_policy_v2/summary.json",
+      "bytes": 19162,
+      "sha256": "b7cf313d9e28399222d8f1b13c1faa81e80c489867d0ae911a10122f4486ca40"
+    },
+    {
+      "path": "results/state_policy_v2/trajectory_differences.csv",
+      "bytes": 16006,
+      "sha256": "413a35c03194165e9e6d9e0a17cd8bae4c67af36c20fab42c98c0500512cee4d"
+    },
+    {
+      "path": "results/state_policy_v2/validation_pair_matrix.csv",
+      "bytes": 598,
+      "sha256": "c03223aafc0e210c7756a625e0e709f85b7f461d73c00ae6e5bdf27d39a173c0"
     },
     {
       "path": "results/timing_runs.csv",
@@ -1013,6 +1168,16 @@
       "path": "results/unique_behavioral_audits.csv",
       "bytes": 10975,
       "sha256": "a11fb564a27fbfc7282776dbca985fdedc9f23bbe32de7e03002e3490dd3255d"
+    },
+    {
+      "path": "tools/analyze_fused_v12_results.py",
+      "bytes": 811,
+      "sha256": "e2fbaeac2e8878268a1f6230c480961b8313846f5d2655b9e1345469d6dcad81"
+    },
+    {
+      "path": "tools/analyze_state_policy_v2.py",
+      "bytes": 1749,
+      "sha256": "98d08aba57c04890afe33f62e1d0c7ab35fb7cfdfec1518988371d540a5b5832"
     },
     {
       "path": "tools/materialize_data.py",

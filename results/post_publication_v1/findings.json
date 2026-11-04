@@ -1,0 +1,125 @@
+{
+  "version": "post-publication-analysis-v1",
+  "input_development_sha256": "a9709f23f17aaf0e083a989e1b5ccf53ac91221987128d5480ff1093f594c401",
+  "input_fingerprint_bank_sha256": "d69fc118d9ab4a464a47885f17e44a0b7dcc92072515d837518db795c0d35cf5",
+  "candidate10_source_sha256": "a818663861cc8aa682c356e4a8f9d7cd9c3de03d7c2c8a371dcdf570ad8ea5ce",
+  "development_counts": {
+    "OR3": {
+      "items": 6000,
+      "at_least_half_capacity": 1936,
+      "equal_two_thirds_capacity": 86,
+      "above_two_thirds_capacity": 0
+    },
+    "Weibull 5k": {
+      "items": 15000,
+      "at_least_half_capacity": 3885,
+      "equal_two_thirds_capacity": 0,
+      "above_two_thirds_capacity": 584
+    }
+  },
+  "development_fingerprint_coverage": [
+    {
+      "N": 16,
+      "states": 16,
+      "at_least_half_capacity": 0,
+      "equal_two_thirds_capacity": 0,
+      "above_two_thirds_capacity": 0,
+      "maximum_item_capacity_ratio": 0.4866666666666667
+    },
+    {
+      "N": 64,
+      "states": 64,
+      "at_least_half_capacity": 0,
+      "equal_two_thirds_capacity": 0,
+      "above_two_thirds_capacity": 0,
+      "maximum_item_capacity_ratio": 0.4866666666666667
+    },
+    {
+      "N": 128,
+      "states": 128,
+      "at_least_half_capacity": 0,
+      "equal_two_thirds_capacity": 0,
+      "above_two_thirds_capacity": 0,
+      "maximum_item_capacity_ratio": 0.4866666666666667
+    }
+  ],
+  "candidate10_algebra": {
+    "score": "q/2 + (r/M)*(1 - 3*q/2)",
+    "q": "item/(item+M)",
+    "r": "bins-item",
+    "M": "max(bins-item)",
+    "ranking_transition": "item=2*M; with an unused bin M=C-item, this is item=2*C/3",
+    "real_arithmetic_score_at_boundary": "1/3",
+    "floating_point_boundary": "Real-arithmetic tie is not a claim of bit-identical floating scores. Rounding and first-maximum tie handling require separately authorized actual execution traces."
+  },
+  "structural_sampling_blind_spot": {
+    "proof": "Any-Fit FF/BF have at most one used bin with free capacity>=C/2. Hence item>=C/2 cannot produce an FF/BF disagreement; collect() excludes all such arrivals.",
+    "applies_to_original_reserved_sampler": true,
+    "reserved_values_loaded": false,
+    "basis": "Same unchanged collect() predicate and Any-Fit invariant; existing audit receipt records0 disagreements, not new reserved-data tuning.",
+    "more_states_with_same_eligibility_cannot_cover_missing_region": true
+  },
+  "recorded_candidate10_bin_reductions_vs_seed": {
+    "OR3": 85,
+    "Weibull 5k": 582
+  },
+  "missing_stratum_item_counts": {
+    "OR3_boundary": 86,
+    "Weibull_above_boundary": 584
+  },
+  "causal_limit": "Group bin reductions are recorded observations and consistent with missing strata; per-call model traces have not been measured. Challenge states follow trusted Worst Fit, not Candidate10.",
+  "existing_false_match_unique_N_source_pairs": 3,
+  "cost_breakdown": [
+    {
+      "configuration": "behavioral-16",
+      "measured_wall_seconds": 16.34623445000034,
+      "exact_measured_wall_seconds": 15.055272449999393,
+      "fingerprint_lifecycle_seconds": 12.769563650001146,
+      "fingerprint_pure_seconds": 0.00684220450000339,
+      "fingerprint_non_pure_fraction": 0.9994641786761442,
+      "separate_full_non_pure_seconds": 2.467546663497867,
+      "fused_counterfactual_seconds_plus_unknown_delta": 13.878687786502471,
+      "maximum_unknown_delta_before_losing_to_exact_seconds": 1.1765846634969215,
+      "not_measured_speedup": true
+    },
+    {
+      "configuration": "behavioral-64",
+      "measured_wall_seconds": 16.3393087000004,
+      "exact_measured_wall_seconds": 15.055272449999393,
+      "fingerprint_lifecycle_seconds": 12.78936870000507,
+      "fingerprint_pure_seconds": 0.025640480499985685,
+      "fingerprint_non_pure_fraction": 0.9979951723105789,
+      "separate_full_non_pure_seconds": 2.453066373002109,
+      "fused_counterfactual_seconds_plus_unknown_delta": 13.886242326998293,
+      "maximum_unknown_delta_before_losing_to_exact_seconds": 1.1690301230011002,
+      "not_measured_speedup": true
+    },
+    {
+      "configuration": "behavioral-128",
+      "measured_wall_seconds": 16.4739037499985,
+      "exact_measured_wall_seconds": 15.055272449999393,
+      "fingerprint_lifecycle_seconds": 12.916968200002884,
+      "fingerprint_pure_seconds": 0.04968722149999749,
+      "fingerprint_non_pure_fraction": 0.9961533371662256,
+      "separate_full_non_pure_seconds": 2.450660169002422,
+      "fused_counterfactual_seconds_plus_unknown_delta": 14.023243580996077,
+      "maximum_unknown_delta_before_losing_to_exact_seconds": 1.032028869003316,
+      "not_measured_speedup": true
+    }
+  ],
+  "trusted_fused_precedent": {
+    "exact_seconds": 24.203657100000175,
+    "fused16_seconds": 24.666661466665875,
+    "trusted_only_not_model_path_validation": true
+  },
+  "boundary_state_count": 6,
+  "boundary_state_bank_sha256": "cb987d6710d87b3926ddf6d181a9bae83507bea14ff39e59d5967dd9484ef201",
+  "new_model_calls": 0,
+  "model_functions_executed": 0,
+  "new_Docker_tasks": 0,
+  "new_full_fitness_evaluations": 0,
+  "host_reference_modules_imported": false,
+  "heldout_data_read": false,
+  "reserved_raw_data_read": false,
+  "historical_candidates_datasets_states_results_modified": false
+}

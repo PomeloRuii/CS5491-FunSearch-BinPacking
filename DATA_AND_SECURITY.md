@@ -49,3 +49,15 @@ and crash risks. AST screening cannot prove safety, bounded cost or semantic
 equivalence. Execution requires a fresh finite source/image/data authorization
 and locally validated images. Publication source anonymization is not equivalent
 runtime-validation evidence, and cloning these files does not inherit old grants.
+
+## Later measured development-only correction
+
+The legacy host-initialization limitation above describes the original replay.
+Subsequent Fused v1.2 and State Policy v2 used the minimal development-only reader
+and blocked legacy/held-out imports. Their host-access observers and cleanup checks
+passed. This does not erase the retrospective exposure, certify arbitrary hostile
+Python isolation or validate a fresh-machine export. State Policy v2 separates its
+normal development image from a fingerprint-only validation image. Raw construction
+and validation values, approval receipts, private dispatch histories and host paths
+remain excluded. Published audit tables contain scalar outcomes/hashes, not state
+capacities, raw decisions or private slot locators.

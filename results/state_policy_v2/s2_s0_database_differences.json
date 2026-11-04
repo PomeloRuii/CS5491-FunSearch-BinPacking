@@ -1,0 +1,155 @@
+[
+  {
+    "N": 16,
+    "block": 1,
+    "island_program_count_delta_s2_minus_s0": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_scores_equal": true
+  },
+  {
+    "N": 16,
+    "block": 2,
+    "island_program_count_delta_s2_minus_s0": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_scores_equal": true
+  },
+  {
+    "N": 16,
+    "block": 3,
+    "island_program_count_delta_s2_minus_s0": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_scores_equal": true
+  },
+  {
+    "N": 64,
+    "block": 1,
+    "island_program_count_delta_s2_minus_s0": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_scores_equal": true
+  },
+  {
+    "N": 64,
+    "block": 2,
+    "island_program_count_delta_s2_minus_s0": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_scores_equal": true
+  },
+  {
+    "N": 64,
+    "block": 3,
+    "island_program_count_delta_s2_minus_s0": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_scores_equal": true
+  },
+  {
+    "N": 128,
+    "block": 1,
+    "island_program_count_delta_s2_minus_s0": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_scores_equal": true
+  },
+  {
+    "N": 128,
+    "block": 2,
+    "island_program_count_delta_s2_minus_s0": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_scores_equal": true
+  },
+  {
+    "N": 128,
+    "block": 3,
+    "island_program_count_delta_s2_minus_s0": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_scores_equal": true
+  }
+]

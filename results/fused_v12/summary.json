@@ -1,0 +1,277 @@
+{
+  "status": "PASS_COMPLETED_ACTUAL_DOCKER_CAMPAIGN",
+  "manifest_sha256": "4ba1da14bcdd1692ecf068bb41e30c7e3b701c03ad3f1e6c93d5b9243d323a7a",
+  "containers": 43,
+  "normal_containers": 38,
+  "trusted_containers": 3,
+  "boundary_containers": 2,
+  "full_attempted": 23,
+  "full_completed": 21,
+  "full_rejected": 2,
+  "fingerprint_invocations": 25,
+  "fingerprint_completed": 23,
+  "normal_registrations": 20,
+  "normal_static_rejections": 24,
+  "normal_runtime_rejections": 4,
+  "normal_exact_matches": 2,
+  "normal_behavioral_matches": 14,
+  "paired": [
+    {
+      "block": 1,
+      "order": "exact / fused16",
+      "exact_seconds": 15.834999199998492,
+      "fused16_seconds": 14.581413599998996,
+      "seconds_saved": 1.2535855999994965,
+      "percent_lower_than_exact": 7.916549815800533
+    },
+    {
+      "block": 2,
+      "order": "fused16 / exact",
+      "exact_seconds": 15.72149470000113,
+      "fused16_seconds": 14.614146699999765,
+      "seconds_saved": 1.107348000001366,
+      "percent_lower_than_exact": 7.043528755578732
+    }
+  ],
+  "mean_seconds": {
+    "exact": 15.778246949999811,
+    "fused16": 14.59778014999938
+  },
+  "mean_seconds_saved": 1.1804668000004312,
+  "percent_lower_using_means": 7.481609355850812,
+  "paired_savings_sample_sd_seconds": 0.1034055986231239,
+  "timing_stats": {
+    "exact": {
+      "mean": 15.778246949999811,
+      "sample_sd": 0.08025980164332283,
+      "range": [
+        15.72149470000113,
+        15.834999199998492
+      ]
+    },
+    "fused16": {
+      "mean": 14.59778014999938,
+      "sample_sd": 0.023145796979801073,
+      "range": [
+        14.581413599998996,
+        14.614146699999765
+      ]
+    }
+  },
+  "costs": {
+    "all": {
+      "lifecycle_seconds": 67.96089020000545,
+      "create_seconds": 12.0198857999967,
+      "inspection_seconds": 5.964934800002084,
+      "ready_seconds": 9.474157399999967,
+      "attach_wait_seconds": 31.366673399996216,
+      "cleanup_seconds": 12.649440999994113,
+      "pure_full_seconds": 9.279862178999998,
+      "pure_fp_seconds": 0.015625501999995794,
+      "fp_phase_seconds": 1.235225475999997,
+      "worker_execute_seconds": 12.630838608000015
+    },
+    "trusted": {
+      "lifecycle_seconds": 7.520091599999432,
+      "create_seconds": 3.9331439999987197,
+      "inspection_seconds": 0.417148399998041,
+      "ready_seconds": 0.7189577999997709,
+      "attach_wait_seconds": 1.8711254000008921,
+      "cleanup_seconds": 0.8798885999985941,
+      "pure_full_seconds": 0.17280954400000015,
+      "pure_fp_seconds": 0.0014228360000001494,
+      "fp_phase_seconds": 0.21362074600000058,
+      "worker_execute_seconds": 0.5175729520000001
+    },
+    "boundary": {
+      "lifecycle_seconds": 2.5015063999981066,
+      "create_seconds": 0.3971333000008599,
+      "inspection_seconds": 0.2766979000007268,
+      "ready_seconds": 0.4354743000003509,
+      "attach_wait_seconds": 0.9654877000011766,
+      "cleanup_seconds": 0.5889635000003182,
+      "pure_full_seconds": 0.0,
+      "pure_fp_seconds": 0.0007850009999970098,
+      "fp_phase_seconds": 0.09467637900000625,
+      "worker_execute_seconds": 0.10203391999999667
+    },
+    "exact": {
+      "lifecycle_seconds": 30.09199740000804,
+      "create_seconds": 3.64089629999944,
+      "inspection_seconds": 2.5011093000048277,
+      "ready_seconds": 3.9605832000033843,
+      "attach_wait_seconds": 16.153907299996717,
+      "cleanup_seconds": 5.29131370000141,
+      "pure_full_seconds": 7.405883746000001,
+      "pure_fp_seconds": 0.0,
+      "fp_phase_seconds": 0.0,
+      "worker_execute_seconds": 8.30469570500001
+    },
+    "fused16": {
+      "lifecycle_seconds": 27.847294799999872,
+      "create_seconds": 4.048712199997681,
+      "inspection_seconds": 2.769979199998488,
+      "ready_seconds": 4.359142099996461,
+      "attach_wait_seconds": 12.37615299999743,
+      "cleanup_seconds": 5.88927519999379,
+      "pure_full_seconds": 1.701168888999998,
+      "pure_fp_seconds": 0.013417664999998635,
+      "fp_phase_seconds": 0.9269283509999902,
+      "worker_execute_seconds": 3.7065360310000095
+    }
+  },
+  "quality": {
+    "best_fitness": -1142.5416666666665,
+    "best_mean_bins": {
+      "OR3": 212.41666666666666,
+      "Weibull 5k": 2072.6666666666665
+    },
+    "last_accepted_fitness": -2750.0,
+    "same_best_curve": true,
+    "false_match_events": 2,
+    "missed_best_events": 0,
+    "posthoc_checks_are_independent_audits": false
+  },
+  "histories": [
+    {
+      "block": 1,
+      "configuration": "exact",
+      "initial_dictionary_unchanged": true,
+      "prompt_state_transitions": 16,
+      "registration_ids": [
+        2,
+        3,
+        8,
+        10,
+        12,
+        13,
+        14,
+        16
+      ],
+      "registration_islands": [
+        9,
+        4,
+        5,
+        0,
+        4,
+        3,
+        8,
+        1
+      ],
+      "final_island_counts": [
+        3,
+        2,
+        1,
+        2,
+        4,
+        2,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "block": 1,
+      "configuration": "fused16",
+      "initial_dictionary_unchanged": true,
+      "prompt_state_transitions": 16,
+      "registration_ids": [
+        2,
+        8
+      ],
+      "registration_islands": [
+        9,
+        5
+      ],
+      "final_island_counts": [
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "block": 2,
+      "configuration": "fused16",
+      "initial_dictionary_unchanged": true,
+      "prompt_state_transitions": 16,
+      "registration_ids": [
+        2,
+        8
+      ],
+      "registration_islands": [
+        9,
+        5
+      ],
+      "final_island_counts": [
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "block": 2,
+      "configuration": "exact",
+      "initial_dictionary_unchanged": true,
+      "prompt_state_transitions": 16,
+      "registration_ids": [
+        2,
+        3,
+        8,
+        10,
+        12,
+        13,
+        14,
+        16
+      ],
+      "registration_islands": [
+        9,
+        4,
+        5,
+        0,
+        4,
+        3,
+        8,
+        1
+      ],
+      "final_island_counts": [
+        3,
+        2,
+        1,
+        2,
+        4,
+        2,
+        1,
+        1,
+        2,
+        2
+      ]
+    }
+  ],
+  "boundary_disagreements": 6,
+  "trusted_wall_seconds": 7.911508400000457,
+  "boundary_wall_seconds": 2.530864099999235,
+  "campaign_wall_seconds": 73.40750839999964,
+  "host_guard_seconds": 0.802509099148665,
+  "all100_seals_unchanged": true,
+  "all43_cleanup_receipts_verified": true,
+  "old_consumed_campaign_receipts_unchanged": true,
+  "heldout_accessed": false,
+  "new_model_calls": 0,
+  "main_calls": 0,
+  "unused_slots_nontransferable": 2
+}

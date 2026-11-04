@@ -1,0 +1,7 @@
+challenge,state_id,family,instance_id,region,first_feasible_bin,candidate8_selected_bin,candidate10_selected_bin,decisions_differ,candidate8_chooses_max_capacity,candidate10_chooses_min_capacity,candidate10_differs_from_ideal_first_tie
+1,589e593c3cac5e6764e8a568aab88600658fd0d008b64c0270d15e895b227bd1,OR3,u500_02,exact_two_thirds,1,127,1,True,True,False,False
+2,70a265f0a9d47b12104c28f520bfd7ff2acae2b35c403f6be70ff94478c3de23,OR3,u500_05,exact_two_thirds,2,28,4,True,True,False,True
+3,c87404a8bf6d98dd17683d12ad8b9a8a11e5f8ca5371dda2dd0cba27ac95f606,OR3,u500_06,exact_two_thirds,8,150,8,True,True,False,False
+4,f081059165f96574a019f0b7e0dae65efedff3d99535185cbfb09b14135b0671,Weibull 5k,test_0,above_two_thirds,3,67,3,True,True,True,False
+5,e63d16e641fd06e31860ab484d5969c7958b09988c91c9bc29c17ffa43cc0abe,Weibull 5k,test_2,above_two_thirds,4,24,10,True,True,True,False
+6,2d6340b9f9dc9a575c3768bc912d050032dc20617b0f0983c0bdf48c93529085,Weibull 5k,test_3,above_two_thirds,2,19,13,True,True,True,False
