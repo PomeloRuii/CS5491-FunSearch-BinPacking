@@ -2,7 +2,7 @@
   "schema": "clean-incremental-research-release-v4",
   "target_repository": "https://github.com/PomeloRuii/CS5491-FunSearch-BinPacking.git",
   "original_public_commit": "bbc1855fd75c34633098224eb620eedea7a7c9eb",
-  "parent_public_commit": "9e7fe317784e445bcb8da2b60af5a7d9a76f1d49",
+  "parent_public_commit": "95ce63f3a797ed68e84ac4426f0c9eea7b304c31",
   "files": [
     {
       "path": ".gitattributes",
@@ -36,8 +36,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6707,
-      "sha256": "e0ef2b42c7eca439bec642f6609d3ca1b5c64e5a7ae0e9faf675ccc4f28e56d0"
+      "bytes": 7150,
+      "sha256": "f00c7bfec914e4d2d18ef0b304d0fb0d37601af2a1e89e8a0b1ef5ea6ef035f9"
     },
     {
       "path": "SOURCE_PROVENANCE.json",
@@ -331,13 +331,18 @@
     },
     {
       "path": "docs/PROJECT_GUIDE.md",
-      "bytes": 4483,
-      "sha256": "cb46e409b21054cfdd05af3c62b1564d349dc233ed6a2be3abd916b1679a38b1"
+      "bytes": 4854,
+      "sha256": "ff44522c4b7501cb8adf5c03b56b0527ea6419cf3b6b0bce37a5cd90953815dc"
     },
     {
       "path": "docs/STATE_POLICY_V2_RESULTS.md",
       "bytes": 14664,
       "sha256": "dd0fa47ea0c90a780fb2ae9803a60923aec25a6246f7474aae1f1791fee32756"
+    },
+    {
+      "path": "docs/V4_MINI_PILOT_CLOSEOUT.md",
+      "bytes": 10575,
+      "sha256": "4e4ca2c8e09f59559b97cc240d302d0b7342a26f01113a932bc9808d6894823f"
     },
     {
       "path": "environment.yml",

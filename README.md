@@ -44,8 +44,8 @@ See [original results](results/RESULTS.md),
 [CSV/JSON evidence](results/fused_v12/). Only two timing repeats of one pool,
 no final held-out verification, no demonstrated reduction in LLM calls, and no
 540-call campaign support a general superiority claim. The unchanged main
-campaign remains **NO-GO** pending genuine live-feedback confirmation and a frozen
-main protocol. The [historical state-policy design](docs/NEXT_STATE_POLICY_V2.md)
+campaign remains **NO-GO** pending predeclared controls and a frozen main
+protocol. The [historical state-policy design](docs/NEXT_STATE_POLICY_V2.md)
 was subsequently implemented and measured; see the completed [State Policy v2 study](docs/STATE_POLICY_V2_RESULTS.md).
 
 S2-N16/64/128 each distinguished Candidate 10 from 8 and completed three full
@@ -58,6 +58,12 @@ study used three timing repeats of one known 16-source pool, not three independe
 live searches. S2 costs 2.7–3.5% more normal wall than S0, with no additional
 discrimination from larger N here. These observations support later confirmation
 of the smallest qualifying N16, not general superiority or a new execution grant.
+
+The [V4 live Mini Pilot closeout](docs/V4_MINI_PILOT_CLOSEOUT.md) reports six live
+rounds per method and the independent audit. S2-N16 completed two full evaluations
+versus Exact's five and Standard's six. All three reached the same development
+best. The audit found four potential island-level improvements among the skips,
+and Round 2 exposed a prompt-metadata fairness confound.
 
 ## Verify evidence without executing candidate code
 
@@ -93,11 +99,12 @@ No reserved audit data is needed merely to recompute the public results. An imag
 ID records a tested local image, not a pullable registry image. Ordinary Docker
 does not safely isolate arbitrary hostile Python.
 
-Selected model: `qwen3.8:27b-q4_K_M`, Q4_K_M; exact digest/settings in `model.json`,
-actual prompts/responses/sources in `candidates/`. This replaces the submitted
-Qwen2.5-Coder-7B-Instruct plan. There are 30 known logged pilot requests plus
-unresolved earlier connectivity (at least two); this is not proof of compliance
-with the nominal lifetime 30/570 estimate. Main experimental calls: 0/540.
+Selected model: `qwen3.8:27b-q4_K_M`, Q4_K_M. See `model.json` for the model digest
+and `candidates/` for the original replay pool's prompts, responses and sources.
+The V4 closeout lists its settings and source hashes. This replaces the submitted
+Qwen2.5-Coder-7B-Instruct plan. There are 51 known logged pilot requests, including
+three rejected V3 responses and 18 completed V4 requests. Earlier connectivity
+activity remains unresolved. Main experimental calls: 0/540.
 No new calls or execution rights are conveyed by this release.
 
 Upstream RayZhhh/FunSearch commit `4b8b4e7d43287998500983d709dfa44be58fca91`

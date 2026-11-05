@@ -19,6 +19,7 @@ registration. See [method](../METHOD.md) and [filter coverage](FILTER_ORDER_AUDI
 | Post-publication diagnosis | Structural sampling blind spot and lifecycle accounting | A measured fused speedup at that earlier stage |
 | Completed fused v1.2 | Fresh paired Exact/Fused16 timings, owned restores, 43 disposable tasks and boundary decisions | A collision fix, fresh-machine certification or a main campaign |
 | Completed State Policy v2 | S0/S2 at N16/64/128 with shared C1/F1, three timing repeats, 241 tasks and independent audits | General superiority, live multi-seed search or a pristine held-out validation |
+| Completed V4 live Mini Pilot | Six live-feedback rounds per method, independent skip audits and a prompt-metadata fairness finding | Matched multi-seed quality, held-out performance or end-to-end speedup |
 
 The dated [post-publication findings](POST_PUBLICATION_FINDINGS_V1.md) are historical
 analysis; their then-proposed experiment was later completed as v1.2. Failed v1
@@ -39,6 +40,8 @@ and v1.1 attempts remain preserved privately and are not successful timing runs.
   comparison, not independent new evaluations or an executed counterfactual.
 - [Milestone](MILESTONE_2026-11-19.md), [future policy](NEXT_STATE_POLICY_V2.md),
   and [runtime limits](FUSED_V12_REPRODUCTION.md) describe scope and next decisions.
+- [V4 live Mini Pilot closeout](V4_MINI_PILOT_CLOSEOUT.md) covers the live trajectories,
+  independent audit, provenance and main-study readiness criteria.
 
 ## Source navigation
 
@@ -62,6 +65,6 @@ terminal-source propagation (C1) and same-worker validity fallback (F1). Scalar
 evidence is under `results/state_policy_v2/`; source is under
 `phase3/state_policy_v2/`. `tools/analyze_state_policy_v2.py` recomputes timing
 statistics and audit counts without raw inputs or candidate execution. S2 retained
-Candidate 10 but did not resolve island-registration losses. The next research
-question is genuine matched-budget generation/evaluation/database feedback;
-no live Mini Pilot or main results are claimed in this release.
+Candidate 10 but did not resolve island-registration losses. The subsequent
+[live Mini Pilot](V4_MINI_PILOT_CLOSEOUT.md) exercised generation, evaluation and
+database feedback. The matched multi-seed main study remains unrun.
