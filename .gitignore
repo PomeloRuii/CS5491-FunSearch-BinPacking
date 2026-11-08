@@ -5,6 +5,8 @@ __pycache__/
 **/test_tmp/
 *.tar
 *.pdf
+!paper/CS5491_FINAL_REPORT.pdf
+!paper/CS5491_EXTENDED_REPORT.pdf
 **/research_data.json
 **/states.json
 **/development_or3.json

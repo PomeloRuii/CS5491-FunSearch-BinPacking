@@ -7,7 +7,7 @@ import phase2_bootstrap
 from phase2_bootstrap import ROOT,PHASE1B
 from candidate_runner import CandidateRunner
 from catalogue import require_reviewed
-from trusted_cases import GROUPS,content_hash
+from trusted_cases import content_hash
 from validate import require_validation_receipt
 
 
@@ -27,7 +27,11 @@ class ResearchRunner(CandidateRunner):
         return {**super()._request_payload(candidate,parsed,body,job_id,body_hash),'task':self.task}
 
     def task_spec(self,action,dataset='development',size=16,state_set='fingerprint',representatives=None):
-        groups={'OR3':GROUPS['OR3']} if dataset=='legacy_validation' else self.data[dataset]
+        if dataset == 'legacy_validation':
+            from trusted_cases import GROUPS
+            groups = {'OR3': GROUPS['OR3']}
+        else:
+            groups = self.data[dataset]
         return {'action':action,'dataset':dataset,'dataset_sha256':content_hash(groups),
                 'state_bank_sha256':self.manifest['state_bank_sha256'],
                 'fingerprint_size':size,'state_set':state_set,

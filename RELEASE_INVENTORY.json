@@ -1,8 +1,6 @@
 {
-  "schema": "clean-incremental-research-release-v4",
-  "target_repository": "https://github.com/PomeloRuii/CS5491-FunSearch-BinPacking.git",
-  "original_public_commit": "bbc1855fd75c34633098224eb620eedea7a7c9eb",
-  "parent_public_commit": "95ce63f3a797ed68e84ac4426f0c9eea7b304c31",
+  "schema": "cs5491-final-submission-public-v1",
+  "parent_public_commit": "45dd475d6d3aca2ea024f1c5104cbad98777538a",
   "files": [
     {
       "path": ".gitattributes",
@@ -11,8 +9,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 179,
-      "sha256": "0e46725ccd0ca10844a7b5790de15872008b4eded5fbc7ac29ef3d923a59b743"
+      "bytes": 244,
+      "sha256": "91ac936c818343f94ac43e9ff1bf071d8d5e309ef7932d2b97d693a218f30b6f"
     },
     {
       "path": "DATA_AND_SECURITY.md",
@@ -36,8 +34,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 7150,
-      "sha256": "f00c7bfec914e4d2d18ef0b304d0fb0d37601af2a1e89e8a0b1ef5ea6ef035f9"
+      "bytes": 2680,
+      "sha256": "17ca052f110f52f6767a0d3742683f1dea643a2c2fec6387043b5a7f115d1224"
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "bytes": 5007,
+      "sha256": "f8b28cfb5ba9190ea815f5d55ef7c95be2010f08449b02f496bc0b65c1fcb050"
     },
     {
       "path": "SOURCE_PROVENANCE.json",
@@ -350,9 +353,54 @@
       "sha256": "037d1e72d62381b6bb3f0ec006dcfc9d2854fa41823811a37f57041aefc151e8"
     },
     {
+      "path": "figures/efficiency.png",
+      "bytes": 72455,
+      "sha256": "053c7ce2a305f100e5fbfd0f3876e32d24df18a9d01851676d2cc6590bdbdd28"
+    },
+    {
+      "path": "figures/fitness.png",
+      "bytes": 60427,
+      "sha256": "9ddb346ed057df484328c4eb6e254027654576dc4ef1f910157a4c50046e3af9"
+    },
+    {
+      "path": "figures/fitness_pair2.png",
+      "bytes": 72252,
+      "sha256": "a2fc18079ebfd1dde3b1da1701eab2197ee452de5b5ad986de0f4647399e6040"
+    },
+    {
       "path": "model.json",
       "bytes": 640,
       "sha256": "854792906bab1a3f190506f1fb4eb3284376344e6d3dba2424a451e50a7c023a"
+    },
+    {
+      "path": "paper/CS5491_EXTENDED_REPORT.pdf",
+      "bytes": 297479,
+      "sha256": "46bbd492fc0524dd3218ffcea3d2092851f5a3fac51b059d1c3150b7c894e9f3"
+    },
+    {
+      "path": "paper/CS5491_FINAL_REPORT.pdf",
+      "bytes": 296300,
+      "sha256": "b1f9223235bfcb046948ceb22b365bfe526d2011014227dd06f2a78429bfd8f3"
+    },
+    {
+      "path": "paper/EXTENDED_REPORT.md",
+      "bytes": 18824,
+      "sha256": "aedf78e7c1eb51ef6d6508f3fcf87a0d6c2d65340945ae9795481f861c2360db"
+    },
+    {
+      "path": "paper/FINAL_REPORT.md",
+      "bytes": 11970,
+      "sha256": "ebfcc9612b3b50018ce6420146c012cf4d1a636c454d73fc1355acbfc8f5cab1"
+    },
+    {
+      "path": "paper/PROPOSAL_SCOPE.md",
+      "bytes": 1147,
+      "sha256": "29a24f526b301beb1bf3796b61334ef47506cf18389f82f884ae481e1c625521"
+    },
+    {
+      "path": "paper/SUPPLEMENT.md",
+      "bytes": 5935,
+      "sha256": "dfce8299bc56bde1f478ca1866e5e750011597c4ef3a285cb635592e6a313a54"
     },
     {
       "path": "phase1b/development_data_v1.py",
@@ -481,8 +529,8 @@
     },
     {
       "path": "phase1b/trusted_cases.py",
-      "bytes": 1826,
-      "sha256": "e78b840e127aa92eb922e1c7da8ffb20934dd904e99cfe464d27c3108b9893c8"
+      "bytes": 2122,
+      "sha256": "20f205f12f080dd04835bf3bb591b848daf9c0b3b721208e736c269b9b7e7029"
     },
     {
       "path": "phase2/Dockerfile",
@@ -496,8 +544,8 @@
     },
     {
       "path": "phase2/backend.py",
-      "bytes": 3411,
-      "sha256": "af3541e54a5dabd366d544b6bc3b13a1db83d3decab1eebb2e161546b11586d8"
+      "bytes": 3497,
+      "sha256": "0ad401d9ee71785c2177a9f490c448ba3f8b06ce0f03b3d5522977137784fb0f"
     },
     {
       "path": "phase2/build_datasets.py",
@@ -728,6 +776,11 @@
       "path": "phase3/database_state.py",
       "bytes": 3538,
       "sha256": "15a5c519e80c42c3a991584809d1568c149c7fdd497b33c08a8e430ba593ea3f"
+    },
+    {
+      "path": "phase3/final_test_v1/worker.py",
+      "bytes": 4715,
+      "sha256": "e14034911e3b33f6e8c9f4faf9ed2160e3d27d6d561cb67f8124f9632cce7a51"
     },
     {
       "path": "phase3/fused_followup_v1/__init__.py",
@@ -1090,6 +1143,31 @@
       "sha256": "6fdbca1198a7bd7ba35e55464336d3ca67c57fa0358ab55b3f3c1f6efafbf3ff"
     },
     {
+      "path": "results/main_study/audit_events.csv",
+      "bytes": 2025,
+      "sha256": "c8acf64a24283066c028f9c4c13e5cd0378c4f35f55386f6147105db375402c1"
+    },
+    {
+      "path": "results/main_study/heldout.csv",
+      "bytes": 1672,
+      "sha256": "24cbbded1fff56e9c600b23b7dcf97032484f42a47328c972328674a7383aca2"
+    },
+    {
+      "path": "results/main_study/matched_runs.csv",
+      "bytes": 2080,
+      "sha256": "755705647d52fb7545f69e241ebdcb613b33c5dba1e368abdcc91da920196d8b"
+    },
+    {
+      "path": "results/main_study/provenance.json",
+      "bytes": 5116,
+      "sha256": "865809cfe2c5ed186daa0a3d6889a54e9915d0298629d41fb4b86dc8c47b0798"
+    },
+    {
+      "path": "results/main_study/trajectories.csv",
+      "bytes": 40632,
+      "sha256": "ff8eca6499291bd2b5be903676f48b9117dd2270a26054928cd128645e545f2c"
+    },
+    {
       "path": "results/post_publication_v1/cost_model.csv",
       "bytes": 814,
       "sha256": "3528e2701f74f7721f0036ebc9e0cdd0f4286a5fda5e423a2ab1e12776a80ab6"
@@ -1195,12 +1273,14 @@
       "sha256": "68dcba28d4fb4fc87656775fbb35cb8389a4201213b4949e7b47a031753adbc4"
     },
     {
+      "path": "tools/reproduce_main_study.py",
+      "bytes": 8176,
+      "sha256": "8d18d41ab79bb52c14b80114d4048848296c3a9bbad310050c7d2c08f2d6eb95"
+    },
+    {
       "path": "tools/verify_release.py",
       "bytes": 1868,
       "sha256": "cc926368aa68416d410f004d979db1bdd77aedff8433118cc8a293fdcce9cacb"
     }
-  ],
-  "private_history_included": false,
-  "raw_data_included": false,
-  "source_provenance": "SOURCE_PROVENANCE.json"
+  ]
 }
