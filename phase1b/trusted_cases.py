@@ -23,7 +23,16 @@ BODIES = {
 TOY = {"toy": {"capacity": 10, "num_items": 4, "items": [6, 7, 3, 4]}}
 # Prospective host-development-only-v1. Historical whole-OR3 fixtures/results
 # remain historical; their old execution grants must not validate this helper.
-GROUPS = {"toy": TOY, "OR3": load_development()["OR3"]}
+
+
+def __getattr__(name):
+    if name != "GROUPS":
+        raise AttributeError(name)
+    # The public export omits instance values. Importing specifications and
+    # reviewed bodies needs only code; requesting GROUPS still checks the data.
+    groups = {"toy": TOY, "OR3": load_development()["OR3"]}
+    globals()["GROUPS"] = groups
+    return groups
 
 
 def content_hash(value):
