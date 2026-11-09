@@ -12,7 +12,7 @@ CS5491 Artificial Intelligence research project. We compare Standard FunSearch, 
 The timing result applies to these three trajectories and the measured environment. Finite probe agreement does not certify equivalence. The held-out comparison covers five instances and has documented historical OR3 exposure.
 
 - [Final paper PDF](paper/CS5491_FINAL_REPORT.pdf) and [editable source](paper/FINAL_REPORT.md)
-- [Repository supplement](paper/SUPPLEMENT.md) and [preserved extended technical report](paper/CS5491_EXTENDED_REPORT.pdf)
+- [Repository supplement](paper/SUPPLEMENT.md)
 - [Proposal scope and deviations](paper/PROPOSAL_SCOPE.md)
 - [Main-study data and provenance](results/main_study/) and [paper figures](figures/)
 - [Reproducibility and safety](REPRODUCIBILITY.md)

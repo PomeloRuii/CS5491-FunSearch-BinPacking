@@ -1,6 +1,6 @@
 # Technical supplement
 
-The [final paper](CS5491_FINAL_REPORT.pdf) has four substantive pages and a separate references page. This repository supplement indexes the full evidence tables and operational accounting. The earlier seven-page [extended technical report](CS5491_EXTENDED_REPORT.pdf) and its [Markdown](EXTENDED_REPORT.md) are preserved as originally rendered. They retain their original draft label and all-pair trajectory figure.
+The [final paper](CS5491_FINAL_REPORT.pdf) has four substantive pages and a separate references page. This repository supplement indexes the full evidence tables and operational accounting.
 
 ## Frozen replay and live comparison
 
@@ -19,7 +19,7 @@ The main study tested S2-N16, Exact and Standard at equal request budgets. [Nine
 
 ## Audit and held-out provenance
 
-- [All 18 audit events](../results/main_study/audit_events.csv) identify candidate, representative, selection island, fitness delta, validation disagreement count and historical margins. The [extended report appendix](CS5491_EXTENDED_REPORT.pdf) renders the full table. Potential island margins refer to the historical selected-island threshold at the skip, with future counterfactual trajectories unobserved.
+- [All 18 audit events](../results/main_study/audit_events.csv) identify candidate, representative, selection island, fitness delta, validation disagreement count and historical margins. Potential island margins refer to the historical selected-island threshold at the skip, with future counterfactual trajectories unobserved.
 - [All nine held-out rows](../results/main_study/heldout.csv) carry source and body hashes, shared task identity and both family outcomes. Pair 0 Exact and S2-N16 share task 2. Four retrospective OR3 instances and one Weibull instance were frozen; historical whole-OR3 evaluation and legacy initialization limit the interpretation.
 - [Provenance and resource bindings](../results/main_study/provenance.json) give the frozen protocol, model, image and input identities, 540-call study/audit archive digest, independent audit closure and Recovery v1.2 closure. The receipts and full instance values remain in the private archive.
 

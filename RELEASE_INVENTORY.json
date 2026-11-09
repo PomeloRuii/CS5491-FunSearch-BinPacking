@@ -9,8 +9,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 244,
-      "sha256": "91ac936c818343f94ac43e9ff1bf071d8d5e309ef7932d2b97d693a218f30b6f"
+      "bytes": 210,
+      "sha256": "507b4c2a3b702fa3f5fa666b5635df5425889ade92d093285b16ea815b7261ec"
     },
     {
       "path": "DATA_AND_SECURITY.md",
@@ -34,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2680,
-      "sha256": "17ca052f110f52f6767a0d3742683f1dea643a2c2fec6387043b5a7f115d1224"
+      "bytes": 2604,
+      "sha256": "807063790099ff6d1910562d8f1258830b640261df6df99a91d0f308d0d82dda"
     },
     {
       "path": "REPRODUCIBILITY.md",
@@ -373,24 +373,14 @@
       "sha256": "854792906bab1a3f190506f1fb4eb3284376344e6d3dba2424a451e50a7c023a"
     },
     {
-      "path": "paper/CS5491_EXTENDED_REPORT.pdf",
-      "bytes": 297479,
-      "sha256": "46bbd492fc0524dd3218ffcea3d2092851f5a3fac51b059d1c3150b7c894e9f3"
-    },
-    {
       "path": "paper/CS5491_FINAL_REPORT.pdf",
-      "bytes": 295902,
-      "sha256": "322e178ca18d07cedfeb44cad6cd81920f9d6e33b8153d22d23bcce1dae26e4a"
-    },
-    {
-      "path": "paper/EXTENDED_REPORT.md",
-      "bytes": 18824,
-      "sha256": "aedf78e7c1eb51ef6d6508f3fcf87a0d6c2d65340945ae9795481f861c2360db"
+      "bytes": 295887,
+      "sha256": "25863fbd94b0b15764b60bbee7cfb07cd5336160584805afb644f400edc93273"
     },
     {
       "path": "paper/FINAL_REPORT.md",
-      "bytes": 11495,
-      "sha256": "2cdec0298ba75014abc9586c4c8c4f440dcc1cda2142832e11ec875cc4dbde36"
+      "bytes": 11475,
+      "sha256": "1b4e470567f8e132f56462d0337050704e612b6605f45b057b26731e75c75585"
     },
     {
       "path": "paper/PROPOSAL_SCOPE.md",
@@ -399,8 +389,8 @@
     },
     {
       "path": "paper/SUPPLEMENT.md",
-      "bytes": 5935,
-      "sha256": "dfce8299bc56bde1f478ca1866e5e750011597c4ef3a285cb635592e6a313a54"
+      "bytes": 5625,
+      "sha256": "5000445eb8c1a930048a570a75f274f52d58086b1f3da19a7285c207ecc18de2"
     },
     {
       "path": "phase1b/development_data_v1.py",

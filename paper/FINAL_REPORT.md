@@ -117,4 +117,4 @@ At a matched generation budget, S2-N16 saved 35 full Development evaluations ver
 
 [E1] CS5491 State Policy v2, `docs/STATE_POLICY_V2_RESULTS.md`, `phase3/state_policy_v2/states.py` and `results/state_policy_v2/`. Frozen state construction, replay, and per-size measurements.
 
-[E2] CS5491 completed study, independent audit and held-out archive. `paper/SUPPLEMENT.md` indexes the extended report and `results/main_study/` tables. The latter contains receipt-derived observations and provenance digests. `REPRODUCIBILITY.md` specifies offline checks and runtime limits.
+[E2] CS5491 completed study, independent audit and held-out archive. `paper/SUPPLEMENT.md` indexes the `results/main_study/` tables. The latter contains receipt-derived observations and provenance digests. `REPRODUCIBILITY.md` specifies offline checks and runtime limits.
