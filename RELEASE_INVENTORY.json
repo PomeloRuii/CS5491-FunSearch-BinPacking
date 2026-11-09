@@ -379,8 +379,8 @@
     },
     {
       "path": "paper/CS5491_FINAL_REPORT.pdf",
-      "bytes": 296300,
-      "sha256": "b1f9223235bfcb046948ceb22b365bfe526d2011014227dd06f2a78429bfd8f3"
+      "bytes": 295902,
+      "sha256": "322e178ca18d07cedfeb44cad6cd81920f9d6e33b8153d22d23bcce1dae26e4a"
     },
     {
       "path": "paper/EXTENDED_REPORT.md",
@@ -389,8 +389,8 @@
     },
     {
       "path": "paper/FINAL_REPORT.md",
-      "bytes": 11970,
-      "sha256": "ebfcc9612b3b50018ce6420146c012cf4d1a636c454d73fc1355acbfc8f5cab1"
+      "bytes": 11495,
+      "sha256": "2cdec0298ba75014abc9586c4c8c4f440dcc1cda2142832e11ec875cc4dbde36"
     },
     {
       "path": "paper/PROPOSAL_SCOPE.md",

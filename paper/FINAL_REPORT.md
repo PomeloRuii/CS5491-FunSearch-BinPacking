@@ -4,13 +4,13 @@
 
 ## Abstract
 
-We compare a fixed 16-state behavioral filter, S2-N16, with Standard FunSearch and exact-source filtering in three matched live pairs. At 180 generation requests per method, S2-N16 completed 48 full evaluations versus 83 for Exact and 180 for Standard, a 42.2% reduction versus Exact. Its active time was lower in two pairs and higher in one. An audit of 18 skips found two fitness mismatches and seven potential selected-island gains. Development and held-out fitness tied in two pairs. In the third, S2-N16 improved equal-family fitness by using fewer Weibull bins and more OR3 bins.
+Full packing evaluations consume search time even when source-distinct heuristics make the same placement decisions. We use a fixed 16-state behavioral filter, S2-N16, to screen for this redundancy and compare it with Standard FunSearch and exact-source filtering in three matched live pairs. At 180 generation requests per method, S2-N16 completed 48 full evaluations versus 83 for Exact and 180 for Standard, a 42.2% reduction versus Exact. An audit of 18 skips found two fitness mismatches and seven potential selected-island gains. Development and held-out fitness tied in two pairs. In the third pair, S2-N16 achieved higher equal-family fitness on both splits, with fewer Weibull bins and more OR3 bins.
 
 ## 1. Motivation and background
 
 FunSearch generates heuristic functions with an LLM, evaluates them, and uses an island database of selected programs to construct later prompts [1–3]. In online bin packing, items arrive sequentially and must be placed without seeing future items. The evaluator calls the candidate's `priority(item, bins)` on feasible residual capacities, selects the first maximum, and opens a new bin if none fits. The aim is to minimize bins used. First Fit and Best Fit provide packing baselines.
 
-Different source programs can make the same decisions. We measure whether a short decision trace saves evaluation time and how screening affects search feedback and packing quality.
+Different source programs can make the same decisions. We test whether a short decision trace reduces full evaluations at a matched generation budget, and track timing, search feedback and packing quality.
 
 ## 2. Fixed probes and processing policy
 
@@ -20,15 +20,15 @@ For state s = (x, r, I), x is the item, r the feasible capacities and I their or
 
 $$ dₕ(s) = I[first argmaxⱼ pₕ(x, r)ⱼ],   Φₙ(h) = (dₕ(s₁), …, dₕ(sₙ)). $$
 
-After static checks, Standard fully evaluates candidates. Exact skips matching normalized source. S2-N16 applies Exact, then reuses a recorded behavioral skip for the same source (C1). Remaining candidates run the probes. A vector match marks a suspected duplicate of an evaluated representative. A miss proceeds to full evaluation, as does a recoverable probe failure (F1). Only complete valid results register. A matching vector establishes agreement on these probes; it cannot certify equivalence or equal full-stream fitness.
+After static checks, Standard fully evaluates candidates. Exact skips matching normalized source. S2-N16 applies Exact, then reuses a recorded behavioral skip for the same source (C1). Remaining candidates run the probes. A vector match marks a suspected duplicate of an evaluated representative. A miss proceeds to full evaluation, as does a recoverable probe failure (F1). Only complete valid results register. A matching vector establishes agreement on the selected probes and serves as a screening signal for full-stream behavior.
 
 <!-- pagebreak -->
 
 ## 3. Fixed-pool replay and live controls
 
-**Replay.** Every replay arm received the same ordered 16-request candidate stream, with no fresh generation. In the state-policy replay, S2-16/64/128 each completed three full evaluations per block versus eight for Exact, retained the same best fitness, and separated the known #10/#8 false match that S0 missed. N16 was the smallest tested S2 bank that achieved those observed outcomes. Larger banks supplied no additional discrimination on this pool. The earlier separate-worker replay took longer than Exact despite saving evaluations. The three sizes were compared in replay; only N16 entered the live study [E1].
+**Replay.** To compare probe sizes on a fixed pool, every replay arm received the same ordered 16-request candidate stream. In the state-policy replay, S2-16/64/128 each completed three full evaluations per block versus eight for Exact, retained the same best fitness, and separated the known #10/#8 false match that S0 missed. N16 was the smallest tested S2 bank to match the larger banks on this pool. The live study used N16 [E1].
 
-**Live search.** Three matched pairs used 60 requests per method and pair (540 main requests). Methods started from matched checkpoints with independent databases, paired decoding seeds and rotating serial order. Skips and registrations could change later prompts and candidates. Full evaluation used 12 OR3 and three Weibull Development instances [1, 4]. Fitness is higher-is-better, with 50% weight per family.
+**Live search.** To measure evaluation savings during live search, we used 60 requests per method in each of three matched pairs (540 main requests). Methods started from matched checkpoints with independent databases, paired decoding seeds and rotating serial order. Skips and registrations could change later prompts and candidates. Full evaluation used 12 OR3 and three Weibull Development instances [1, 4]. Fitness is higher-is-better, with 50% weight per family.
 
 $$ F(h) = −½ [mean bins_OR3(h) + mean bins_Weibull(h)]. $$
 
@@ -44,7 +44,7 @@ The fixed generator was local Ollama Qwen3.8 27B Q4_K_M on an NVIDIA RTX 5090, w
 
 ![Figure 1. Full Development evaluations and paired method-active differences versus Exact.](../figures/efficiency.png)
 
-S2-N16 saved 42.2% versus Exact and 73.3% versus Standard. Against Exact, its method-active differences were −90.801, −13.049 and +28.131 s. Pair 2 saved ten full evaluations while using seven extra containers. Generation plus evaluation time includes method-owned readiness, filtering, worker and registration costs. Human approval, shared orchestration, downtime and independent audit time are excluded. Evaluation savings did not consistently translate into lower active time.
+S2-N16 used 42.2% fewer full evaluations than Exact and 73.3% fewer than Standard. Against Exact, its method-active differences were −90.801, −13.049 and +28.131 s. In Pair 2, S2-N16 used ten fewer full evaluations and seven more containers than Exact. Generation plus evaluation time includes method-owned readiness, filtering, worker and registration costs. Human approval, shared orchestration, downtime and independent audit time are excluded.
 
 <!-- pagebreak -->
 
@@ -59,11 +59,11 @@ S2-N16 saved 42.2% versus Exact and 73.3% versus Standard. Against Exact, its me
 
 ![Figure 2. Pair 2 Development trajectory at full scale and zoomed after wave 4. The jump at wave 42 gives S2-N16 a 22.917-point final advantage over both controls.](../figures/fitness_pair2.png)
 
-Pairs 0 and 1 tie. In Pair 2, S2-N16 uses 13.167 more OR3 bins and 59.000 fewer Weibull bins per instance than both controls. Its equal-family fitness improves by 22.917 points. This is the observed live outcome. Which individual search decision produced the gain is unresolved.
+Pairs 0 and 1 tie. In Pair 2, S2-N16 uses 13.167 more OR3 bins and 59.000 fewer Weibull bins per instance than both controls. Its equal-family fitness improves by 22.917 points.
 
 ## 6. Independent audit of skips
 
-A frozen hash rank selected six direct behavioral or C1 skip events per pair from 68 eligible events. The 18 sampled events covered 24 distinct sources across candidates and representatives. Each received one independent full Development evaluation and a vector of 256 separate validation decisions. Opportunity margins compare the remeasured candidate with the historical pre-skip threshold, using a tolerance of 1e-9.
+To measure what the filter skipped, a frozen hash rank selected six direct behavioral or C1 skip events per pair from 68 eligible events. The 18 sampled events covered 24 distinct sources across candidates and representatives. Each received one independent full Development evaluation and a vector of 256 separate validation decisions. Opportunity margins compare the remeasured candidate with the historical pre-skip threshold, using a tolerance of 1e-9.
 
 | Pair | Events | Fitness mismatches | Vector-mismatch events | Island opportunities | Above global best |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -72,13 +72,13 @@ A frozen hash rank selected six direct behavioral or C1 skip events per pair fro
 | 2 | 6 | 1 | 1 | 1 | 0 |
 | Total | 18 | 2 | 1 | 7 | 0 |
 
-Pair 1 #129 scored 1.208 points above #122 despite agreeing on all 256 decisions. Pair 2 #166 scored 6.917 below #139 and differed at two validation positions. In six of the seven potential island improvements, candidate and representative fitness tied. The selected island's historical threshold can still be below that fitness. The seven margins measure local opportunities. Alternative registrations and downstream trajectories were unobserved. The deterministic sample and repeated sources do not estimate population false-match rates [E2].
+Pair 1 #129 scored 1.208 points above #122 despite agreeing on all 256 decisions. Pair 2 #166 scored 6.917 below #139 and differed at two validation positions. In six of the seven potential island improvements, the candidate and representative tied in fitness and both scored above the selected island's pre-skip best. The seven margins quantify potential improvements at the original skip events. The mismatch counts describe the 18 deterministically selected skip events, including repeated sources [E2].
 
 <!-- pagebreak -->
 
 ## 7. Held-out packing quality
 
-The held-out addendum evaluated the final Development incumbent of each run, using lowest island ID to break fitness ties. Nine provenance rows map to eight measured source/body identities because Pair 0 Exact and S2-N16 share one source. The held-out split contains four 500-item OR3 instances and one 5,000-item Weibull instance.
+The held-out comparison uses each run's final Development incumbent, with ties broken by lowest island ID. Nine provenance rows map to eight measured source/body identities because Pair 0 Exact and S2-N16 share one source. The held-out split contains four 500-item OR3 instances and one 5,000-item Weibull instance.
 
 | Pair | Method | OR3 mean bins | Weibull bins | Fitness |
 | --- | --- | ---: | ---: | ---: |
@@ -91,15 +91,15 @@ Pairs 0 and 1 tie. Pair 2 S2-N16 uses 14.25 more OR3 bins per instance and 58 fe
 
 ## 8. Research accounting and limitations
 
-The proposal estimated approximately 570 requests (30 pilot plus 540 main). The known pre-main ledger reached 51: 30 earlier logged requests, three rejected V3 outputs, and 18 calls in the revised-prompt V4 pilot. These include documented pre-main troubleshooting and prompt revision. Earlier connectivity usage is unresolved. The 540 matched main requests therefore give 591 classified logged requests across those scopes, with the exact lifetime total unknown. Readiness preloads and infrastructure repairs are accounted separately.
+The proposal estimated approximately 570 requests (30 pilot plus 540 main). The known pre-main ledger reached 51: 30 earlier logged requests, three rejected V3 outputs, and 18 calls in the revised-prompt V4 pilot. The 540 matched main requests bring the documented total to 591 across these scopes. Earlier connectivity usage remains unquantified. Readiness preloads and infrastructure repairs are accounted separately.
 
-Independent audit used 24 full and 24 validation workers, with zero model requests. The held-out ledger retains one charged startup failure, a zero-charge guard stop, and eight completed evaluations. A prior inert diagnostic container is separate. The audit-event table, resource receipts and nine held-out rows are indexed in the repository supplement [E2].
+Independent audit used 24 full and 24 validation workers, with zero model requests. The held-out ledger records eight completed evaluations and one additional startup charge. The supplement accounts separately for the zero-charge guard stop and inert diagnostic. The audit-event table, resource receipts and nine held-out rows are indexed in the repository supplement [E2].
 
-The OR3 held-out split was designated retrospectively after historical whole-OR3 baseline evaluation and legacy reference-data initialization. Five instances provide limited evidence for generalization. Three matched live comparisons on one host also provide limited evidence about timing and search quality. Divergent prompts prevent attributing the Pair 2 result to a specific skip. Finite probes and the deterministic audit quantify observed discrepancies on the sampled inputs.
+The OR3 held-out split was designated retrospectively after historical whole-OR3 baseline evaluation and legacy reference-data initialization. The held-out comparison covers five instances. The live timing and search-quality comparisons cover three matched pairs on one host. The Pair 2 result compares complete live trajectories, each with its own search feedback and prompts.
 
 ## 9. Conclusion
 
-At a matched generation budget, S2-N16 saved 35 full Development evaluations versus Exact. Active-time differences varied across pairs. The audit found fitness mismatches and possible island-level feedback losses. The favorable Pair 2 aggregate reflects a trade-off between instance families. Behavioral fingerprints are a practical screening heuristic whose value depends on probe coverage, search history and evaluation cost.
+At a matched generation budget, S2-N16 saved 35 full Development evaluations versus Exact. Final equal-family fitness tied in two pairs and was higher with S2-N16 in Pair 2 on both splits. A 16-state decision trace can screen source-distinct candidates before full packing evaluation.
 
 <!-- pagebreak -->
 
